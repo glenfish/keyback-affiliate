@@ -125,7 +125,7 @@ import { SITE } from '~/config.mjs';
 <script is:inline src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script is:inline>
-  $(document).ready(function () {
+  document.addEventListener('DOMContentLoaded', () => {
     jQuery(document).ready(function ($) {
       //set animation timing
       var animationDelay = 2500,
@@ -261,3 +261,26 @@ import { SITE } from '~/config.mjs';
     // element.scrollIntoView(true);
   };
 </script> -->
+<script is:inline>
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = 'expires=' + d.toUTCString();
+    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+
+    const paramsObj = Array.from(params.keys()).reduce((acc, val) => ({ ...acc, [val]: params.get(val) }), {});
+    // console.log(paramsObj);
+    // document.setCookie(paramsObj, 'Thu, 1 Nov 2023 12:00:00 UTC');
+    let keylist = '';
+    Object.keys(paramsObj).forEach((key) => {
+      setCookie('kb_' + key, paramsObj[key], 90);
+      keylist += 'kb_' + key + ' ';
+      console.log('kb_' + key, paramsObj[key]);
+    });
+    setCookie('keylist', keylist, 90);
+  });
+</script>
