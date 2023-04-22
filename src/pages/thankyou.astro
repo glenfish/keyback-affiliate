@@ -2,8 +2,8 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Conversion from '~/components/widgets/Conversion.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Conversion from '~/components/common/Conversion.astro';
+import Thanks from '~/components/widgets/Thanks.astro';
 
 const meta = {
   title: SITE.title,
@@ -15,21 +15,7 @@ const meta = {
 <Layout {meta}>
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
-    callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
-    }}
-  >
-    <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+  <Thanks />
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
   <Conversion />
 </Layout>
