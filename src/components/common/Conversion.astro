@@ -1,5 +1,17 @@
 <script is:inline src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
-<script is:inline type="text/javascript">
+<script client:load type="text/javascript">
+  const params = new URLSearchParams(window.location.search);
+
+  const paramsObj = Array.from(params.keys()).reduce((acc, val) => ({ ...acc, [val]: params.get(val) }), {});
+
+  const orderID = paramsObj['oid'];
+  const customerID = paramsObj['cid'];
+  const conversionAmount = paramsObj['amt'];
+
+  if (!orderID || !customerID || !conversionAmount) {
+    window.location.href = 'https://keyback.io/error';
+  }
+
   (function (t, a, p) {
     t.TapfiliateObject = a;
     t[a] =
@@ -10,5 +22,8 @@
   })(window, 'tap');
 
   tap('create', '39958-70c9c9', { integration: 'javascript' });
-  tap('conversion', 'test-04', '500', { customer_id: 'cust-04', program_group: 'keyback' });
+  tap('conversion', orderID, conversionAmount, { customer_id: customerID, program_group: 'keyback' });
+  console.log('orderid = ' + orderID);
+  console.log('customerid = ' + customerID);
+  console.log('amount = ' + conversionAmount);
 </script>
