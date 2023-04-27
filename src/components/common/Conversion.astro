@@ -21,7 +21,8 @@
     const conversionAmount = paramsObj['amt'];
 
     if (!orderID || !customerID || !conversionAmount) {
-      window.location.href = 'https://keyback.io/error';
+      // window.location.href = 'https://keyback.io/error';
+      console.log(orderID + ' ' + customerID + ' ' + conversionAmount);
     }
 
     (function (t, a, p) {
