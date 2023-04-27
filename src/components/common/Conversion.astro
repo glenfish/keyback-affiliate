@@ -1,29 +1,44 @@
 <script is:inline src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
-<script client:load type="text/javascript">
-  const params = new URLSearchParams(window.location.search);
+<script type="text/javascript">
+  function checkReferrer() {
+    const preUrl = document.referrer;
+    const match = preUrl.search(
+      /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]keyback)\.([io]{2}|[app]{3})$/i
+    );
+    if (match < 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+  if (checkReferrer()) {
+    const params = new URLSearchParams(window.location.search);
 
-  const paramsObj = Array.from(params.keys()).reduce((acc, val) => ({ ...acc, [val]: params.get(val) }), {});
+    const paramsObj = Array.from(params.keys()).reduce((acc, val) => ({ ...acc, [val]: params.get(val) }), {});
 
-  const orderID = paramsObj['oid'];
-  const customerID = paramsObj['cid'];
-  const conversionAmount = paramsObj['amt'];
+    const orderID = paramsObj['oid'];
+    const customerID = paramsObj['cid'];
+    const conversionAmount = paramsObj['amt'];
 
-  if (!orderID || !customerID || !conversionAmount) {
+    if (!orderID || !customerID || !conversionAmount) {
+      window.location.href = 'https://keyback.io/error';
+    }
+
+    (function (t, a, p) {
+      t.TapfiliateObject = a;
+      t[a] =
+        t[a] ||
+        function () {
+          (t[a].q = t[a].q || []).push(arguments);
+        };
+    })(window, 'tap');
+
+    tap('create', '39958-70c9c9', { integration: 'javascript' });
+    tap('conversion', orderID, conversionAmount, { customer_id: customerID, program_group: 'keyback', color: 'blue' });
+    // console.log('orderid = ' + orderID);
+    // console.log('customerid = ' + customerID);
+    // console.log('amount = ' + conversionAmount);
+  } else {
     window.location.href = 'https://keyback.io/error';
   }
-
-  (function (t, a, p) {
-    t.TapfiliateObject = a;
-    t[a] =
-      t[a] ||
-      function () {
-        (t[a].q = t[a].q || []).push(arguments);
-      };
-  })(window, 'tap');
-
-  tap('create', '39958-70c9c9', { integration: 'javascript' });
-  tap('conversion', orderID, conversionAmount, { customer_id: customerID, program_group: 'keyback' });
-  console.log('orderid = ' + orderID);
-  console.log('customerid = ' + customerID);
-  console.log('amount = ' + conversionAmount);
 </script>
