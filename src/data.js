@@ -58,7 +58,7 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: 'Log In', href: 'https://clients.keyback.io/login' }
+    { type: 'button', text: 'Sign In', href: 'https://clients.keyback.io/login' }
   ],
 };
   
