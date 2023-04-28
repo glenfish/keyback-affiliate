@@ -1,0 +1,37 @@
+---
+import Layout from '~/layouts/BaseLayout.astro';
+import { getHomePermalink } from '~/utils/permalinks';
+
+const title = `terms-affilates`;
+---
+
+<Layout meta={{ title }}>
+  <section class="flex items-center h-full p-16">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="max-w-md text-left">
+        <h2 class="mb-8 font-bold text-9xl">
+          <span class="sr-only">Terms for afftilates</span>
+          <!-- <span class="text-primary">404</span> -->
+        </h2>
+        <p class="text-3xl font-semibold md:text-3xl dark:text-white">
+          Welcome to Keyback affiliates. 
+        </p>
+         <p class="mt-4 mb-8 text-lg text-muted dark:text-white">
+            Sign up now to become our affiliate and get paid in Litecoin (LTC) or Stellar (XLM) - your choice! Both offer lightning fast payments at zero cost. Start earning crypto by referring both customers and affiliates to Keyback.io
+
+The KEYBACK Affiliate Program:
+
+1. Make a base rate of 20% of the KEYBACK retail offer price.
+
+2. BONUSES: Bonuses kick in when you refer 10 or more sales. 10 to 19 customers in a month make an additional 10% on your base commission rate (ie. 22% of retail) , 20+ customers a month make 20% extra on your base commision rate (24% of retail).
+
+3. Our Base Level Affiliate Program also offers Unilevel MLM! Build an unlimited width affiliate army underneath you, up to 2 levels deep! Earn 10% of retail sales on your first level and 5% of retail sales on your second level.
+
+After sign up, you will get access to your custom referral links and your own dashboard. Start earning right away just by sharing KEYBACK with your circle of friends via your affiliate link. See you on the inside :) 
+        </p>
+        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4 mt-20">Back to homepage</a>
+        <a rel="noopener noreferrer" href="https://affiliates.keyback.io" class="btn ml-4 mt-20">Sign Up</a>
+      </div>
+    </div>
+  </section>
+</Layout>
