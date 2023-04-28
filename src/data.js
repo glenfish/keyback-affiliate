@@ -67,7 +67,7 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'What Is Keyback', href: '#videos' },
+        { text: 'What Is Keyback', href: 'https://keyback.io/#videos' },
         { text: 'How It Works', href: '#how-it-works-section' },
         { text: 'Security', href: '#' },
         { text: 'Enterprise', href: '#' },
