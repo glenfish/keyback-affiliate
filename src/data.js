@@ -67,7 +67,7 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'What Is Keyback', href: '#dead-mans-switch' },
+        { text: 'What Is Keyback', href: '#videos' },
         { text: 'How It Works', href: '#how-it-works-section' },
         { text: 'Security', href: '#' },
         { text: 'Enterprise', href: '#' },
@@ -79,8 +79,8 @@ export const footerData = {
     {
       title: 'Affiliates',
       links: [
-        { text: 'Affiliates', href: '#Affiliates' },
-        { text: 'Influencers', href: '#Influencers' },
+        { text: 'Affiliates', href: '#affiliates' },
+        { text: 'Influencers', href: '#influencers' },
         { text: 'Terms', href: '/terms-affiliates' },
       ],
     },
