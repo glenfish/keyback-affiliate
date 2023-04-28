@@ -77,10 +77,11 @@ export const footerData = {
       ],
     },
     {
-      title: 'Partners',
+      title: 'Affiliates',
       links: [
         { text: 'Affiliates', href: '#Affiliates' },
         { text: 'Influencers', href: '#Influencers' },
+        { text: 'Terms', href: '/terms-affiliates' },
       ],
     },
     {
