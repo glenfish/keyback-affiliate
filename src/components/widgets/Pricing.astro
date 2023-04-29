@@ -266,25 +266,16 @@ const {
               {callToAction.text}
             </a>
             <p class="mt-10 text-sm leading-5">
-              <span class="inline font-medium text-gray-500 dark:text-gray-400 text-lg">
+              <span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl">
                 Pay with&nbsp;
                 {
                   callToAction2.icon && (
-                    <Icon name={callToAction2.icon} class="w-10 h-9 inline" title="Credit/Debit Card" />
+                    <Icon name={callToAction2.icon} class="w-7 h-9 inline" title="Credit/Debit Card" />
                   )
                 }
-              </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-lg"
+              </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl"
                 >or
-                {
-                  callToAction3.icon && (
-                    <Icon
-                      name={callToAction3.icon}
-                      class="w-8 h-7 inline"
-                      style="display:relative; top:-2px; "
-                      title="Bitcoin"
-                    />
-                  )
-                }
+                {callToAction3.icon && <Icon name={callToAction3.icon} class="w-7 h-8 inline" title="Bitcoin" />}
               </span>
             </p>
           </div>
