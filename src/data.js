@@ -69,7 +69,7 @@ export const headerData = {
     //   ],
     // },
     {
-      text: 'LOGIN',
+      text: 'Sign In',
       href: 'https://clients.keyback.io/login',
     },
   ],
