@@ -66,6 +66,10 @@ export const headerData = {
           text: 'Sign Up',
           href: 'https://affiliates.keyback.io/',
         },
+        {
+          text: 'Terms',
+          href: 'https://keyback.io/aff-terms',
+        },
       ],
     },
     {
