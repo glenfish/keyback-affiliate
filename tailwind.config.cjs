@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        burntorange: '#FF5E0E',
         primary: '#FF5E0E',
         secondary: 'var(--aw-color-secondary)',
         accent: 'var(--aw-color-accent)',

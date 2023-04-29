@@ -1,15 +1,37 @@
+---
+import { Icon } from 'astro-icon';
+
+interface CallToAction {
+  text: string;
+  href: string;
+  icon?: string;
+}
+
+export interface Props {
+  title?: string;
+  description?: string;
+  callToAction?: string | CallToAction;
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  callToAction = await Astro.slots.render('callToAction'),
+} = Astro.props;
+---
+
 <section class="dark:bg-gray-800 bg-gray-100" id="pricing">
   <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8 py-20">
-    <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg pricing-box lg:max-w-none lg:flex">
+    <div class="max-w-lg mx-auto overflow-hidden rounded-[20px] shadow-lg pricing-box lg:max-w-none lg:flex">
       <div class="px-6 py-8 bg-white dark:bg-gray-900 lg:flex-shrink-1 lg:p-12">
         <h2
-          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-left mb-8"
+          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-5xl min-[1536px]:text-5xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-left mb-8"
         >
           Lifetime Deal
         </h2>
         <p class="mt-6 text-base leading-6 text-gray-500 dark:text-gray-200">
-          For a limited time we're running a special intro offer to the crypto community. Forget paying monthly, we're
-          offering a one time fee for lifetime membership. Get all upgrades and new planned features - FREE for life!
+          For a limited time we're offering lifetime membership at 50% off. Get all Keyback upgrades and new planned
+          features - FREE for life!
         </p>
         <div class="mt-8">
           <div class="flex items-center">
@@ -232,17 +254,26 @@
         <p class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pt-0">Next 300 Members Only</p>
         <p class="mt-4 text-sm leading-5">
           <span class="block font-medium text-gray-500 dark:text-gray-400"> Pay by Credit/Debit</span>
-          <span class="inline-block font-medium text-gray-500 dark:text-gray-400">or BTC/LTC/XLM</span>
+          <span class="inline-block font-medium text-gray-500 dark:text-gray-400">or Bitcoin</span>
         </p>
         <div class="mt-6">
           <div class="rounded-md shadow">
-            <a href="https://clients.keyback.io/benefactor-registration" target="_self">
+            <!-- <a href="https://clients.keyback.io/benefactor-registration" target="_self">
               <button
                 type="button"
-                class="btn dark:bg-[#FF5E0E] bg-[#FF5E0E] py-2 px-4 hover:bg-blue-900 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+                class="btn dark:bg-burntorange py-3 px-4 hover:bg-blue-900 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-bold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-[30px]"
               >
-                JOIN
+                JOIN KEYBACK
               </button>
+            </a> -->
+            <a
+              class="btn btn-primary w-full sm:w-auto"
+              href="https://clients.keyback.io/benefactor-registration"
+              target="_self"
+              rel="noopener"
+            >
+              {callToAction.icon && <Icon name={callToAction.icon} class="w-5 h-5 mr-1 -ml-1.5" />}
+              {callToAction.text}
             </a>
           </div>
         </div>

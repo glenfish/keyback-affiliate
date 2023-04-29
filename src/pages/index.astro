@@ -30,7 +30,7 @@ const meta = {
     callToAction={{
       text: 'Watch Video',
       href: '#videos',
-      icon: 'tabler:download',
+      icon: 'tabler:movie',
     }}
     callToAction2={{ text: 'How It Works', href: '#how-it-works-section' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
@@ -95,7 +95,23 @@ const meta = {
       </div>
     </Fragment>
   </Hero>
-  <Pricing />
+
+  <Pricing
+    callToAction={{
+      text: 'Join Keyback Now',
+      href: 'https://clients.keyback.io/benefactor-registration',
+      icon: 'tabler:activity',
+    }}
+  >
+    <Fragment slot="title">
+      Get Crypto Secure.<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Keyback.</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Built for digital asset traders and investors.<br class="hidden md:inline" />Don't be the guy who lost his crypto!
+    </Fragment>
+  </Pricing>
+
   <!-- <HowItWorks /> -->
   <div class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
     <!-- Note Widget ******************* -->
@@ -353,11 +369,11 @@ const meta = {
       callToAction={{
         text: 'Join Keyback Now',
         href: 'https://clients.keyback.io/benefactor-registration',
-        icon: 'tabler:download',
+        icon: 'tabler:activity',
       }}
     >
       <Fragment slot="title">
-        Get Crypto Secure.<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Keyback.</span>
+        Get Crypto Secure. <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Keyback.</span>
       </Fragment>
 
       <Fragment slot="subtitle">
