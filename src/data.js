@@ -21,7 +21,7 @@ export const headerData = {
     // },
     {
       text: 'Watch Video',
-      href: 'https://keyback.io/#videos',
+      href: getPermalink('#videos')
     },
     {
       text: 'Pricing',
