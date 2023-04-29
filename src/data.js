@@ -21,15 +21,15 @@ export const headerData = {
     // },
     {
       text: 'Watch Video',
-      href: './#videos',
+      href: 'https://keyback.io/#videos',
     },
     {
       text: 'Pricing',
-      href: './#pricing',
+      href: 'https://keyback.io/#pricing',
     },
     {
       text: 'FAQ',
-      href: './#faq',
+      href: 'https://keyback.io/#faq',
     },
 
     {
