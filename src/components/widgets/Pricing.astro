@@ -275,7 +275,16 @@ const {
                 }
               </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-lg"
                 >or
-                {callToAction3.icon && <Icon name={callToAction3.icon} class="w-8 h-7 inline" title="Bitcoin" />}
+                {
+                  callToAction3.icon && (
+                    <Icon
+                      name={callToAction3.icon}
+                      class="w-8 h-7 inline"
+                      style="display:relative; top:-2px; "
+                      title="Bitcoin"
+                    />
+                  )
+                }
               </span>
             </p>
           </div>
