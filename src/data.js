@@ -2,60 +2,58 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+    // {
+    //   text: 'Landing',
+    //   links: [
+    //     {
+    //       text: 'Sass',
+    //       href: getPermalink('/landing/saas'),
+    //     },
+    //     {
+    //       text: 'Startup',
+    //       href: getPermalink('/landing/startup'),
+    //     },
+    //     {
+    //       text: 'Mobile App',
+    //       href: getPermalink('/landing/mobile-app'),
+    //     },
+    //   ],
+    // },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Sass',
-          href: getPermalink('/landing/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/landing/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
-        },
-      ],
+      text: 'Watch Video',
+      href: './#videos',
     },
+    {
+      text: 'Pricing',
+      href: './#pricing',
+    },
+    {
+      text: 'FAQ',
+      href: './#faq',
+    },
+
     {
       text: 'Pages',
       links: [
         {
-          text: 'Features',
-          href: '#',
-        },
-        {
-          text: 'Pricing',
-          href: '#',
-        },
-        {
           text: 'About us',
-          href: '#',
+          href: './about',
         },
         {
           text: 'Contact',
-          href: '#',
+          href: './contact',
         },
         {
           text: 'Terms',
-          href: getPermalink('/terms'),
+          href: getPermalink('./terms'),
         },
         {
           text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          href: getPermalink('./privacy'),
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
-    {
-      text: 'Blog',
-      href: getBlogPermalink(),
-    },
+
   ],
   actions: [
     { type: 'button', text: 'Sign In', href: 'https://clients.keyback.io/login' }
@@ -84,7 +82,7 @@ export const footerData = {
     {
       title: 'Support',
       links: [
-        { text: 'Contact Us', href: '#contactus' },
+        { text: 'Contact Us', href: './contact' },
       ],
     },
     {
