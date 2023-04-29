@@ -55,19 +55,19 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Affiliates',
-      links: [
-        {
-          text: 'Sign In',
-          href: 'https://affiliates.keyback.io/login',
-        },
-        {
-          text: 'Sign Up',
-          href: 'https://affiliates.keyback.io/',
-        },
-      ],
-    },
+    // {
+    //   text: 'Affiliates',
+    //   links: [
+    //     {
+    //       text: 'Sign In',
+    //       href: 'https://affiliates.keyback.io/login',
+    //     },
+    //     {
+    //       text: 'Sign Up',
+    //       href: 'https://affiliates.keyback.io/',
+    //     },
+    //   ],
+    // },
     {
       text: 'LOGIN',
       href: 'https://clients.keyback.io/login',
