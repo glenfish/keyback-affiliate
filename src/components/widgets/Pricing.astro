@@ -20,9 +20,12 @@ const {
 } = Astro.props;
 ---
 
-<section class="dark:bg-gray-800 bg-gray-100" id="pricing">
+<span id="pricing" style="position:relative; top:-40px;"></span>
+<section class="dark:bg-gray-800 bg-gray-100">
   <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8 py-20">
-    <div class="max-w-lg mx-auto overflow-hidden rounded-[20px] shadow-lg pricing-box lg:max-w-none lg:flex">
+    <div
+      class="max-w-lg mx-auto overflow-hidden rounded-[20px] shadow-lg pricing-box lg:max-w-none lg:flex border-8 border-white dark:border-8 dark:border-gray-900"
+    >
       <div class="px-6 py-8 bg-white dark:bg-gray-900 lg:flex-shrink-1 lg:p-12">
         <h2
           class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-5xl min-[1536px]:text-5xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-left mb-8"
@@ -36,7 +39,7 @@ const {
         <div class="mt-8">
           <div class="flex items-center">
             <h4
-              class="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-blue-600 uppercase bg-white dark:text-blue-400 pl-5"
+              class="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-blue-600 dark:text-blue-200 uppercase bg-white dark:bg-gray-800 pl-5"
             >
               What&#x27;s included
             </h4>
@@ -187,6 +190,7 @@ const {
             >
               &amp; What&#x27;s not
             </h4>
+            <div class="flex-1 border-t-2 border-gray-200"></div>
           </div>
           <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
             <li class="flex items-start lg:col-span-1 py-2">
@@ -233,11 +237,11 @@ const {
         </div>
       </div>
       <div
-        class="px-6 py-8 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12"
+        class="px-6 py-8 text-center bg-gray-200 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12"
       >
         <span class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pb-0"> RRP $1000&nbsp;</span><br
           class="sm:hidden md:inline"
-        /><span class="dark:text-blue-400 lg:text-xl md:text-2xl sm:text-xl text-xl">NOW 50% OFF!</span>
+        /><span class="dark:text-blue-400 text-blue-400 lg:text-xl md:text-2xl sm:text-xl text-xl">NOW 50% OFF!</span>
 
         <!-- <div
           class="flex items-center justify-center mt-4 text-5xl font-extrabold leading-none text-gray-900 dark:text-white"
@@ -247,7 +251,7 @@ const {
           >
         </div> -->
         <h2
-          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-lcenter my-4"
+          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-700 text-lcenter my-4"
         >
           <span class="text-xl pr-0 relative -top-6 text-gray-800 dark:text-white"> $</span>497
         </h2>
