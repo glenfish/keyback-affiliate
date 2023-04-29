@@ -67,20 +67,17 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'What Is Keyback', href: 'https://keyback.io/#videos' },
-        { text: 'How It Works', href: '#how-it-works-section' },
-        { text: 'Security', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'What Is Keyback', href: './#videos' },
+        { text: 'How It Works', href: './#how-it-works-section' },
+        { text: 'Pricing', href: './#pricing' },
+
       ],
     },
     {
       title: 'Affiliates',
       links: [
-        { text: 'Affiliates', href: '#affiliates' },
-        { text: 'Influencers', href: '#influencers' },
+        { text: 'Affiliates', href: '/affiliates' },
+        { text: 'Influencers', href: '/influencers' },
         { text: 'Terms', href: '/aff-terms' },
       ],
     },
