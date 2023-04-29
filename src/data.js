@@ -19,10 +19,10 @@ export const headerData = {
     //     },
     //   ],
     // },
-    {
-      text: 'Video',
-      href: getPermalink('/videos'),
-    },
+    // {
+    //   text: 'Video',
+    //   href: getPermalink('/videos'),
+    // },
     {
       text: 'Pricing',
       href: getPermalink('/pricing'),
