@@ -9,14 +9,21 @@ interface CallToAction {
 
 export interface Props {
   title?: string;
-  description?: string;
+  subtitle?: string;
   callToAction?: string | CallToAction;
+  callToAction2?: string | CallToAction;
+  callToAction3?: string | CallToAction;
+  image?: string | any; // TODO: find HTMLElementProps
 }
 
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
+  content = await Astro.slots.render('content'),
   callToAction = await Astro.slots.render('callToAction'),
+  callToAction2 = await Astro.slots.render('callToAction2'),
+  callToAction3 = await Astro.slots.render('callToAction2'),
+  image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
 
@@ -241,7 +248,7 @@ const {
       >
         <span class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pb-0"> RRP $1000&nbsp;</span><br
           class="sm:hidden md:inline"
-        /><span class="dark:text-blue-400 text-blue-400 lg:text-xl md:text-2xl sm:text-xl text-xl">NOW 50% OFF!</span>
+        /><span class="dark:text-blue-400 text-blue-400 lg:text-3xl md:text-2xl sm:text-xl text-xl">NOW 50% OFF!</span>
 
         <!-- <div
           class="flex items-center justify-center mt-4 text-5xl font-extrabold leading-none text-gray-900 dark:text-white"
@@ -251,14 +258,19 @@ const {
           >
         </div> -->
         <h2
-          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-700 text-lcenter my-4"
+          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-7xl min-[1536px]:text-7xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-700 text-lcenter my-4"
         >
-          <span class="text-xl pr-0 relative -top-6 text-gray-800 dark:text-white"> $</span>497
+          <span class="text-xl pr-0 relative -top-8 text-gray-800 dark:text-white"> $</span>497
         </h2>
         <p class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pt-0">Next 300 Members Only</p>
         <p class="mt-4 text-sm leading-5">
-          <span class="block font-medium text-gray-500 dark:text-gray-400"> Pay by Credit/Debit</span>
-          <span class="inline-block font-medium text-gray-500 dark:text-gray-400">or Bitcoin</span>
+          <span class="inline font-medium text-gray-500 dark:text-gray-400">
+            Pay with
+            {callToAction2.icon && <Icon name={callToAction2.icon} class="w-10 h-9 inline" title="Credit/Debit Card" />}
+          </span><span class="inline font-medium text-gray-500 dark:text-gray-400"
+            >or
+            {callToAction3.icon && <Icon name={callToAction3.icon} class="w-10 h-9 inline" title="Bitcoin" />}
+          </span>
         </p>
         <div class="mt-6">
           <div class="rounded-md">
