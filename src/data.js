@@ -20,7 +20,7 @@ export const headerData = {
     //   ],
     // },
     {
-      text: 'Watch Video',
+      text: 'Video',
       href: getPermalink('/videos'),
     },
     {
@@ -32,6 +32,8 @@ export const headerData = {
       text: 'FAQ',
       href: getPermalink('/faq'),
     },
+
+
     {
       text: 'Pages',
       links: [
@@ -54,19 +56,17 @@ export const headerData = {
       ],
     },
     {
-      text: 'Keyback Login',
-      href: 'https://clients.keyback.io/login',
-    },
-    {
-      text: 'Kecyback Affiliate Login',
+      text: 'Affiliates',
       href: 'https://affiliates.keyback.io/login',
     },
-    
-
+    {
+      text: 'SignIn',
+      href: 'https://clients.keyback.io/login',
+    },
   ],
-  actions: [
-    { type: 'button', text: 'Sign In', href: 'https://clients.keyback.io/login' }
-  ],
+  // actions: [
+  //   { type: 'button', text: 'Sign In', href: 'https://clients.keyback.io/login' }
+  // ],
 };
   
 export const footerData = {
