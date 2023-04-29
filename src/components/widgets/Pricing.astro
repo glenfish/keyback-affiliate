@@ -236,9 +236,10 @@ const {
       <div
         class="px-6 py-8 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12"
       >
-        <p class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pb-5">
-          RRP $1000<br /><span class="dark:text-blue-400">NOW 50% OFF!</span>
-        </p>
+        <span class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pb-0"> RRP $1000&nbsp;</span><br
+          class="sm:hidden md:inline"
+        /><span class="dark:text-blue-400 lg:text-xl md:text-2xl sm:text-xl text-xl">NOW 50% OFF!</span>
+
         <!-- <div
           class="flex items-center justify-center mt-4 text-5xl font-extrabold leading-none text-gray-900 dark:text-white"
         >
@@ -257,7 +258,7 @@ const {
           <span class="inline-block font-medium text-gray-500 dark:text-gray-400">or Bitcoin</span>
         </p>
         <div class="mt-6">
-          <div class="rounded-md shadow">
+          <div class="rounded-md">
             <!-- <a href="https://clients.keyback.io/benefactor-registration" target="_self">
               <button
                 type="button"
