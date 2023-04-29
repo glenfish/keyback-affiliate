@@ -284,11 +284,13 @@ import { SITE } from '~/config.mjs';
     setCookie('kb_keylist', keylist, 90);
   });
   const explainer = document.getElementById('explainer');
+  const inDetail = document.getElementById('in-detail');
   const howItWorksButton = document.getElementById('show-how-it-works');
   const howItWorksSteps = document.getElementById('hiw-steps');
   howItWorksButton.addEventListener('click', () => {
     howItWorksSteps.classList.remove('hidden');
     explainer.classList.add('hidden');
     howItWorksButton.classList.add('hidden');
+    inDetail.classList.add('hidden');
   });
 </script>

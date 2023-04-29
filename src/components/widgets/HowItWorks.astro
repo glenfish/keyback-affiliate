@@ -27,18 +27,19 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
         class="pt-10 text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-center mb-8"
       >
         How It Works
-        <a
-          class="btn btn-secondary w-full sm:w-auto tracking-tight relative -top-2 left-2 py-1"
-          id="show-how-it-works"
-          target="_self"
-          rel="noopener"
-        >
-          {callToAction.icon && <Icon name={callToAction.icon} class="w-3 h-5 mr-1 " />}
-          {callToAction.text}
-        </a>
       </h2>
+      <span id="in-detail" class="mx-auto relative -top-5">(in detail)</span>
+      <button
+        class="btn btn-secondary bg-white/20 w-full sm:w-auto border-3 tracking-tight mx-auto py-3 mb-8 md:w-1/4"
+        id="show-how-it-works"
+        target="_self"
+        rel="noopener"
+      >
+        {callToAction.icon && <Icon name={callToAction.icon} class="w-3 h-5 mr-1 " />}
+        {callToAction.text}
+      </button>
       <p class="text-center text-xl pb-10" id="explainer">
-        Like to know how KEYBACK works in detail? Enquiring minds go ahead and click 'show' to reveal.
+        Like to know how KEYBACK works in detail?<br />Enquiring minds go ahead and click 'show' to reveal.
       </p>
       <div id="hiw-steps" class="hidden">
         <div class="absolute z-0 left-1/2 -ml-2 w-1 h-[92%] dark:bg-[#FF5E0E] bg-gray-400" style="top:260px;"></div>
