@@ -32,7 +32,6 @@ export const headerData = {
       text: 'FAQ',
       href: getPermalink('/faq'),
     },
-
     {
       text: 'Pages',
       links: [
@@ -54,6 +53,15 @@ export const headerData = {
         },
       ],
     },
+    {
+      text: 'Keyback Login',
+      href: 'https://clients.keyback.io/login',
+    },
+    {
+      text: 'Kecyback Affiliate Login',
+      href: 'https://affiliates.keyback.io/login',
+    },
+    
 
   ],
   actions: [
