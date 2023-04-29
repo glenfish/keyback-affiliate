@@ -81,7 +81,7 @@ export const footerData = {
       links: [
         { text: 'Affiliates', href: '#affiliates' },
         { text: 'Influencers', href: '#influencers' },
-        { text: 'Terms', href: '/terms-affiliates' },
+        { text: 'Terms', href: '/aff-terms' },
       ],
     },
     {
