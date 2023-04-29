@@ -263,15 +263,7 @@ const {
           <span class="text-xl pr-0 relative -top-8 text-gray-800 dark:text-white"> $</span>497
         </h2>
         <p class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pt-0">Next 300 Members Only</p>
-        <p class="mt-4 text-sm leading-5">
-          <span class="inline font-medium text-gray-500 dark:text-gray-400">
-            Pay with&nbsp;
-            {callToAction2.icon && <Icon name={callToAction2.icon} class="w-10 h-9 inline" title="Credit/Debit Card" />}
-          </span><span class="inline font-medium text-gray-500 dark:text-gray-400"
-            >or
-            {callToAction3.icon && <Icon name={callToAction3.icon} class="w-10 h-9 inline" title="Bitcoin" />}
-          </span>
-        </p>
+
         <div class="mt-6">
           <div class="rounded-md">
             <!-- <a href="https://clients.keyback.io/benefactor-registration" target="_self">
@@ -291,6 +283,19 @@ const {
               {callToAction.icon && <Icon name={callToAction.icon} class="w-5 h-5 mr-1 -ml-1.5" />}
               {callToAction.text}
             </a>
+            <p class="mt-10 text-sm leading-5">
+              <span class="inline font-medium text-gray-500 dark:text-gray-400 text-lg">
+                Pay with&nbsp;
+                {
+                  callToAction2.icon && (
+                    <Icon name={callToAction2.icon} class="w-10 h-9 inline" title="Credit/Debit Card" />
+                  )
+                }
+              </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-lg"
+                >or
+                {callToAction3.icon && <Icon name={callToAction3.icon} class="w-10 h-8 inline" title="Bitcoin" />}
+              </span>
+            </p>
           </div>
         </div>
       </div>
