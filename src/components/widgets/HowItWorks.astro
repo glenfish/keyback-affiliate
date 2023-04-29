@@ -18,17 +18,17 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
 
 <anchor id="how-it-works-section" class="scroll-mt-10" style="margin-bottom:20px; display:block"></anchor>
 <section
-  class="bg-white dark:bg-gray-800 py-10 relative z-10 scroll-mt-16 hiw-bgnd -left-1.5 px-2"
+  class="bg-gray-50 dark:bg-gray-800 py-10 relative z-10 scroll-mt-16 hiw-bgnd -left-1.5 px-2 dark:border-none border"
   style="min-width:100%;"
 >
   <section class="dark:text-gray-100 hiw-bgnd px-2" style="max-width: 1280px; margin:auto;">
     <div class="container mx-auto flex flex-col">
       <h2
-        class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-center mb-8"
+        class="pt-10 text-4xl min-[1400px]:text-[90px] max-[1535px]:text-6xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-600 text-center mb-8"
       >
         How It Works
         <a
-          class="btn btn-primary w-full sm:w-auto tracking-tight relative -top-2 left-2 py-1"
+          class="btn btn-secondary w-full sm:w-auto tracking-tight relative -top-2 left-2 py-1"
           id="show-how-it-works"
           target="_self"
           rel="noopener"
@@ -37,7 +37,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
           {callToAction.text}
         </a>
       </h2>
-      <p class="text-center text-xl" id="explainer">
+      <p class="text-center text-xl pb-10" id="explainer">
         Like to know how KEYBACK works in detail? Enquiring minds go ahead and click 'show' to reveal.
       </p>
       <div id="hiw-steps" class="hidden">
