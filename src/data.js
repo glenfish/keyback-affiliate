@@ -57,7 +57,16 @@ export const headerData = {
     },
     {
       text: 'Affiliates',
-      href: 'https://affiliates.keyback.io/login',
+      links: [
+        {
+          text: 'Sign In',
+          href: 'https://affiliates.keyback.io/login',
+        },
+        {
+          text: 'Sign Up',
+          href: 'https://affiliates.keyback.io/',
+        },
+      ],
     },
     {
       text: 'SignIn',
