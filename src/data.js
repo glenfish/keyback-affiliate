@@ -21,15 +21,16 @@ export const headerData = {
     // },
     {
       text: 'Watch Video',
-      href: getPermalink('#videos')
+      href: getPermalink('/videos'),
     },
     {
       text: 'Pricing',
-      href: 'https://keyback.io/#pricing',
+      href: getPermalink('/pricing'),
+
     },
     {
       text: 'FAQ',
-      href: 'https://keyback.io/#faq',
+      href: getPermalink('/faq'),
     },
 
     {
