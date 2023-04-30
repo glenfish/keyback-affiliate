@@ -3,7 +3,7 @@ title: 'About Us'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-We are a group of crypto enthusiasts, creators, developers and entrepreneurs who wondered aloud ... 'where is my crypto backup?'
+We are a group of crypto enthusiasts, investors, traders, creators, developers and entrepreneurs who wondered aloud ... 'where is my crypto backup?'
 
 We set about creating a system that securely and in a decentralized way, backed up our crypto. But we wanted it to be simple and easy to understand and use. Not for geeks and programmers. For normal crypto peeps.
 
