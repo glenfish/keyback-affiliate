@@ -1847,7 +1847,7 @@ background-size: cover!important;
   100% { transform: translate(0, 0) rotate(0); }
 }
 
-#pricing-rhs {
+/* #pricing-rhs {
   background-image: linear-gradient(rgba(2, 29, 57, 0.60), rgba(2, 29, 57, 0.60)), url('./images/pattern-bgnd.jpg');object-fit: cover;
   
-}
+} */

@@ -5,6 +5,9 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'payment-panel': "url('./images/pattern-bgnd.jpg')",
+      },
       colors: {
         burntorange: '#FF5E0E',
         primary: '#FF5E0E',
