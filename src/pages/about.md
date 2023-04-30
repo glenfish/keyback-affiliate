@@ -9,13 +9,13 @@ We set about creating a system that securely and in a decentralized way, backed 
 
 And then we wanted to be able to pass that crypto backup on to our wives, husbands, girlfriends, boyfriends, significant others, pets, charities ...
 
-When we pop off the face of the earth, which most of us will at some point, we're gonna need a solution for passing it on. Right?
+When we pop off the face of the earth, which most of us will do at some point, we're gonna need a solution for passing it on, right?
 
-So over a period of about 3 years we came up with Keyback. We're dedicated to its success and in making it totally rock solid in every way.
+So over a period of about 3 years we came up with Keyback. We're always building, adding new stuff. We're dedicated to its success and in making it totally rock solid in every way.
 
-If you have any questions, comments, insights, bug reports, or general beefs, please [contact us](https://keyback.io/contact).
+If you have any questions, comments, insights, bug reports, or musings, please [contact us](https://keyback.io/contact). Oh by the way, General Beef handles our virtual suggestion box. Feel free to sling some arrows. He likes constructive criticism. (be nice!)
 
-We love talking with our customers and we welcome you to the Keyback family. :)
+We hope to welcome you to our Keyback family. :)
 
 ---
 
