@@ -107,8 +107,8 @@ export const footerData = {
       title: 'Company',
       links: [
         { text: 'About', href: './about' },
-        { text: 'Articles', href: './blog' },
-        { text: 'Press', href: './press' },
+        // { text: 'Articles', href: './blog' },
+        // { text: 'Press', href: './press' },
       ],
     },
   ],
@@ -116,12 +116,12 @@ export const footerData = {
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  socialLinks: [
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss') },
-  ],
+  // socialLinks: [
+  //   { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
+  //   { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+  //   { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+  //   { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss') },
+  // ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
     Made by <a class="text-orange-600 hover:underline dark:text-gray-200" href="https://base7.pro/"> Base7</a> · All rights reserved.
