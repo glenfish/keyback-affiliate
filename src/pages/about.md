@@ -18,7 +18,3 @@ If you have any questions, comments, insights, bug reports, or musings, please [
 Oh by the way, General Beef handles our virtual suggestion box. Feel free to sling some arrows. He likes constructive criticism. (be nice!)
 
 We hope to welcome you to our Keyback family 😀
-
----
-
-Keyback is a brand asset of Eternal Digital Assets LLC.
