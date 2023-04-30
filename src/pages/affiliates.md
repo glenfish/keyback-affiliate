@@ -15,4 +15,4 @@ The KEYBACK Affiliate Program:
 
 After sign up, you will get access to your custom referral links and your own dashboard. Start earning right away just by sharing KEYBACK with your circle of friends via your affiliate link. See you on the inside :)
 
-[Join Keyback Affiliate Program](https://affiliates.keyback.io/)
+[Join The Keyback Affiliate Program](https://affiliates.keyback.io/)
