@@ -1846,3 +1846,8 @@ background-size: cover!important;
   90% { transform: translate(-1px, 0px) rotate(-0.75deg); }
   100% { transform: translate(0, 0) rotate(0); }
 }
+
+#pricing-rhs {
+  background-image: linear-gradient(rgba(2, 29, 57, 0.60), rgba(2, 29, 57, 0.60)), url('./images/pattern-bgnd.jpg');object-fit: cover;
+  
+}
