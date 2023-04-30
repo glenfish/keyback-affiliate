@@ -123,7 +123,7 @@ export const footerData = {
   //   { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss') },
   // ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-orange-600 hover:underline dark:text-gray-200" href="https://base7.pro/"> Base7</a> · All rights reserved.
+    
+    Made by <a class="text-orange-600 hover:underline dark:text-gray-200" href="https://base7.pro/"> Base7</a> · All rights reserved. &copy; 2023
   `,
 };
