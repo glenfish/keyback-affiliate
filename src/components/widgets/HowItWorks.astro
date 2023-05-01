@@ -41,7 +41,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
       <p class="text-center text-xl pb-10" id="explainer">
         Want details?<br />Click 'show' button to see how KEYBACK works
       </p>
-      <div id="hiw-steps" class="hidden">
+      <div id="hiw-steps" class="hiddens">
         <div class="absolute z-0 left-1/2 -ml-2 w-1 h-[91%] dark:bg-[#FF5E0E] bg-gray-400" style="top:260px;"></div>
 
         <div
@@ -54,8 +54,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 1</h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Make An Inventory of Online Wallets, Software Wallets, Exchanges. Login Details, Seed-phrases,
-                Public/Private Keys.
+                Compile a list of everything you want to back up and pass on to your heirs
               </p>
             </div>
           </div>
@@ -68,11 +67,11 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
                 >EASY</span
               >
             </span>
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Make An Inventory</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Do An Inventory</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10">
-              Make an inventory of all your digital assets  (cryptocurrency and tokens) and login info you use for any
-              online wallets, software wallets, or exchanges where you hold assets</span
-            >
+              Make an inventory of all your digital assets, (cryptocurrency and tokens) and login info you use for any
+              online wallets and exchanges, software wallets and hardware wallets.
+            </span>
           </div>
 
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
@@ -92,8 +91,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 2</h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Create Master-File. Make a spreadsheet in .csv, .txt file format or plain text format. Store file on USB
-                Stick unencrypted.
+                Create your Master File. Store file on USB stick unencrypted
               </p>
             </div>
           </div>
@@ -101,15 +99,15 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >Create Master-File <span
+              >Master File <span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
                 >EASY</span
               ></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Organise Information</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Create Your Document</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10">
-              Create either a spreadsheet or a plain text file of all your assets, wallets, public/private keys, seed
-              phrases, login information - anything digital you want to pass on to your heirs.</span
+              Create either a spreadsheet (.csv) or a plain text file (.txt) of private keys, backup seed phrases and
+              login information from the previous step.</span
             >
           </div>
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
@@ -127,25 +125,22 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 3</h1>
 
-              <p class="text-gray-500 dark:text-gray-300">
-                Create Master Files, with collated information. Use Keyback Encryptor to create file while the computer
-                is disconnected from internet.
-              </p>
+              <p class="text-gray-500 dark:text-gray-300">Use the Keyback Encryptor to process your Master File</p>
             </div>
           </div>
 
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >SAVE IT <span
+              >MULTI-ENCRYPT IT <span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
                 >EASY</span
               ></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Save Your File</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Make It Fort Knox</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >Save unencrypted .csv or .txt file format in a safe location - USB stick is ideal. This is your
-              un-encrypted MASTERFILE.</span
+              >You will generate 4 keys (and optional 5th MasterKey) of 25 complex characters and create 3 x AES-256 bit
+              encrypted files from your original Master File.</span
             >
           </div>
 
@@ -164,8 +159,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 4</h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Create Master Key. It's an optional step but an added level of security. Store in a safe or with Estate
-                Attorney.
+                Create free cloud storage accounts and upload files, saving the access links
               </p>
             </div>
           </div>
@@ -173,16 +167,15 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >Encrypt It<br class="hidden-break" style="display:none;" /><span
+              >Store It<br class="hidden-break" style="display:none;" /><span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
                 >VIDEO WALKTHROUGH
               </span></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">AES-256 Military Grade</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Cloud Storage</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >Decide if you want to use a MASTER KEY - this will be kept either in your locked safe at home or
-              business, or in your Living Will, via your estate attorney. This is a final level of encryption that is
-              optional.</span
+              >To create a redundant backup you will use 6 x free cloud storage locations to host your 3 x encrypted
+              files. Links will be saved to 2 x USB sticks.</span
             >
           </div>
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
@@ -200,25 +193,21 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 5</h1>
 
-              <p class="text-gray-500 dark:text-gray-300">
-                File Backup. Using multiple cloud storage services, backup your encrypted files using the links.
-              </p>
+              <p class="text-gray-500 dark:text-gray-300">Keys are stored in text files on 2 x encrypted USB sticks</p>
             </div>
           </div>
 
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >storage<br class="hidden-break" style="display:none;" /><span
+              >Key Backup<br class="hidden-break" style="display:none;" /><span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
                 >VIDEO WALKTHROUGH
               </span></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Cloud Hosted Backups</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Hardware Key Storage</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >Using various free cloud hosting accounts, you will store your 3 files so that every file has two backup
-              locations. You will copy down the share links to these file storage locations and store these in a text
-              file.</span
+              >Store 3 x encryption keys across 2 different password protected USB sticks.</span
             >
           </div>
 
@@ -237,7 +226,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 6</h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Backup your text files on two password encrypted USB sticks.
+                Store the final encryption key and USB password to your Keyback vault
               </p>
             </div>
           </div>
@@ -245,15 +234,15 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >Backup<span
+              >Vault It<span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
                 >EASY</span
               ></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Backup Text Files</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Put It In The Vault</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >On 2 password encrypted USB sticks you will store the text files of the storage locations to your 3
-              encrypted files, and 3 passwords you created during encryption.</span
+              >Our rock solid vault which is attached to your Dead Man Switch will contain 2 x pieces of the puzzle
+              needed to decrypt your Master File.</span
             >
           </div>
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
@@ -271,21 +260,22 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 7</h1>
 
-              <p class="text-gray-500 dark:text-gray-300">Store USB passwords in Keyback Vault.</p>
+              <p class="text-gray-500 dark:text-gray-300">Set up your Dead Mans Switch</p>
             </div>
           </div>
 
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >Store passwords<span
+              >Configure DMS<span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
                 >EASY</span
               ></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Use Keyback Vault</span>
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Set Your Notifications</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >Inside the Keyback Vault, you will store your USB password and 1 password.</span
+              >You will select how often you want to verify you are in good health, from 7 days to 28 days in frequency.
+              You will receive emails to verify you are alive and well, and confirm your status by clicking a button.</span
             >
           </div>
 
@@ -303,42 +293,9 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 8</h1>
 
-              <p class="text-gray-500 dark:text-gray-300">Choose health status check frequency from 7 to 28 days.</p>
-            </div>
-          </div>
-
-          <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
-            <span
-              class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >Configure Health Status<span
-                class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
-                >EASY</span
-              ></span
-            >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Set Status Frequency</span>
-            <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >You will select how often you want to verify you are in good health, from 7 days to 28 days in frequency.
-              You will receive emails to verify you are alive and well, and confirm your status by clicking a button.</span
-            >
-          </div>
-          <div class="flex items-center justify-center lg:col-span-1 col-span-full">
-            <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
-          </div>
-        </div>
-        <!-- *******************************9 -->
-
-        <div
-          class="mt-20 hiw-box dark:shadow-lg relative z-10 grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 dark:border-4 border-2 border-gray-200 dark:border-[#FF5E0E] rounded-xl dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black bg-gray-100"
-        >
-          <div
-            class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-1 lg:text-left dark:border-0 border-2 border-gray-200 dark:border-gray-300 rounded-xl lg:mx-2 bg-white dark:bg-gray-900"
-          >
-            <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
-              <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 9</h1>
-
               <p class="text-gray-500 dark:text-gray-300">
                 Choose and invite your heirs via email. Once they create an account with their details, they are
-                activated in the system.
+                activated in the system
               </p>
             </div>
           </div>
@@ -355,10 +312,44 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             <span class="mt-4 dark:text-gray-300 md:mx-10">
               You will invite the people you wish to receive your crypto when you pass on to join your Keyback account.
               These people are your heirs. Once they accept and complete their account creation, they are active in the
-              system.(FREE)</span
+              system. (FREE)</span
             >
           </div>
 
+          <div class="flex items-center justify-center lg:col-span-1 col-span-full">
+            <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
+          </div>
+        </div>
+        <!-- *******************************9 -->
+        <div
+          class="mt-20 hiw-box dark:shadow-lg relative z-10 grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 dark:border-4 border-2 border-gray-200 dark:border-[#FF5E0E] rounded-xl dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black bg-gray-100"
+        >
+          <div
+            class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-1 lg:text-left dark:border-0 border-2 border-gray-200 dark:border-gray-300 rounded-xl lg:mx-2 bg-white dark:bg-gray-900"
+          >
+            <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
+              <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 9</h1>
+
+              <p class="text-gray-500 dark:text-gray-300">
+                Trustees will confirm your health status, uprotecting or unlocking your vault if you are unable to
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
+            <span
+              class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
+              >Trustees <span
+                class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
+                >EASY</span
+              ></span
+            >
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Choose Trustees</span>
+            <span class="mt-4 dark:text-gray-300 md:mx-10"
+              >You will choose one or more Trustees who will help confirm your health status if you do not respond to
+              the Dead Mans Switch 'Proof Of Life' checks. (FREE)</span
+            >
+          </div>
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
             <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
           </div>
@@ -374,7 +365,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 10</h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Trustees will confirm your health status, activating the process if necessary.
+                Over the course of 3+ months, health checks will confirm your status
               </p>
             </div>
           </div>
@@ -382,23 +373,25 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
           <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
             <span
               class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >Trustee <span
+              >Dead Mans Switch <span
                 class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
-                >EASY</span
+                >AUTOMATED</span
               ></span
             >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">Choose Your Trustee</span>
-            <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >You will choose one or more Trustees who will help confirm your health status if you do not respond to
-              the Dead Man’s Switch ‘proof of life’ checks.(FREE)</span
+            <span class="text-2xl font-bold md:text-3xl md:mx-10">Good Health Checks</span>
+            <span class="mt-4 dark:text-gray-300 md:mx-10">
+              A series of 'good health' checks and timers will give you over 3 months to verify you are alive. If the
+              Trustee(s) confirm death, or the timer expires per your settings, the vault will automatically be opened
+              to your heir(s). Only they will be granted access to your vault, which contains your USB password and 1 x
+              Key.</span
             >
           </div>
+
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
             <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
           </div>
         </div>
         <!-- *******************************11 -->
-
         <div
           class="mt-20 hiw-box dark:shadow-lg relative z-10 grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 dark:border-4 border-2 border-gray-200 dark:border-[#FF5E0E] rounded-xl dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black bg-gray-100"
         >
@@ -408,43 +401,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 11</h1>
 
-              <p class="text-gray-500 dark:text-gray-300">
-                Over three months, health checks will confirm your status. Failure to confirm status will generate the release of passwords and Key, giving access to your wallets.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-2 lg:text-left">
-            <span
-              class="mb-5 text-xl tracking-wider uppercase dark:text-blue-400 text-blue-400 font-bold dark:font-normal md:mx-10"
-              >The Trigger <span
-                class="bg-green-100 dark:bg-transparent text-green-700 text-sm font-medium px-2.5 relative left-1 -top-0.5 py-0.5 rounded dark:bg-gray-100 dark:text-green-400 border border-green-600"
-                >AUTOMATED</span
-              ></span
-            >
-            <span class="text-2xl font-bold md:text-3xl md:mx-10">You Crypto Is Protected</span>
-            <span class="mt-4 dark:text-gray-300 md:mx-10"
-              > A series of health checks and timers will give you over 3 months to verify you are alive. If the Trustee(s) confirm death, or the timer expires per your settings, the vault will automatically be opened to your heir(s). Only they will be granted access to your vault, which contains your USB password and 1 x Key.</span
-            >
-          </div>
-
-          <div class="flex items-center justify-center lg:col-span-1 col-span-full">
-            <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
-          </div>
-        </div>
-        <!-- *******************************12 -->
-        <div
-          class="mt-20 hiw-box dark:shadow-lg relative z-10 grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 dark:border-4 border-2 border-gray-200 dark:border-[#FF5E0E] rounded-xl dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black bg-gray-100"
-        >
-          <div
-            class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-1 lg:text-left dark:border-0 border-2 border-gray-200 dark:border-gray-300 rounded-xl lg:mx-2 bg-white dark:bg-gray-900"
-          >
-            <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
-              <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 12</h1>
-
-              <p class="text-gray-500 dark:text-gray-300">
-                Restore Masterfile using Keyback Decrypter and using the USB’s you supplied to your heirs.
-              </p>
+              <p class="text-gray-500 dark:text-gray-300">You passed away or did not check in for more than 3 months</p>
             </div>
           </div>
 
@@ -458,15 +415,16 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             >
             <span class="mt-2 text-2xl font-bold md:text-3xl md:mx-10">Heirs Access The Vault</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >Together with the USB sticks you created earlier (that you supplied to your heir or heirs), they will now be able to use the Keyback decrypter to decrypt and restore your original MASTERFILE.</span
+              >Your heir(s) have possession of the 2 x USB sticks. The unlocked vault decrypts the USB sticks and the
+              contents together with the encryption keys and files stored on cloud hosting are able to be decrypted,
+              revealing your original MasterFile. Your digital assets.</span
             >
           </div>
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
             <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
           </div>
         </div>
-        <!-- *******************************13 -->
-
+        <!-- *******************************12 -->
         <div
           class="mt-20 mb-10 hiw-box dark:shadow-lg relative z-10 grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 dark:border-4 border-2 border-gray-200 dark:border-[#FF5E0E] rounded-xl dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black bg-gray-100"
         >
@@ -474,10 +432,10 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             class="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-1 lg:text-left dark:border-0 border-2 border-gray-200 dark:border-gray-300 rounded-xl lg:mx-2 bg-white dark:bg-gray-900"
           >
             <div class="flex flex-col items-center p-4 space-y-3 text-center rounded-xl">
-              <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 13</h1>
+              <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white font-mono">STEP 12</h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                If Masterfile was used, you will now recover it using the Mastfile Password.
+                Heirs restore crypto wallets and access digital assets passed on by you, the Benefactor
               </p>
             </div>
           </div>
@@ -492,9 +450,12 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
             >
             <span class="text-2xl font-bold md:text-3xl md:mx-10">Restoring Crypto Wallets</span>
             <span class="mt-4 dark:text-gray-300 md:mx-10"
-              >If you optionally encrypted using a MASTER KEY, this will be required in order to successfully unlock the MASTERFILE. In this instance, the opening of the safe or the reading of the Living Will would then provide this last key to unlock the MASTERFILE.</span
+              >If you optionally encrypted using a MasterKey, this will be required in order to successfully unlock the
+              MasterFile. In this instance, the opening of the safe or the reading of the Living Will would then provide
+              this last key to unlock the MasterFile. Software and Hardware wallets can now be recovered.</span
             >
           </div>
+          <!-- ******************************* steps end -->
 
           <div class="flex items-center justify-center lg:col-span-1 col-span-full">
             <div><img src="./images/logo-sm.png" alt="" class="h-10 md:h-8 lg:h-10" /></div>
