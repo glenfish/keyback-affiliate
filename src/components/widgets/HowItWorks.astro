@@ -30,7 +30,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
       </h2>
       <!-- <span id="in-detail" class="mx-auto relative -top-5">(in detail)</span> -->
       <button
-        class="btn btn-secondary bg-white/20 w-full sm:w-auto border-3 tracking-tight mx-auto py-3 mb-8 md:w-1/4"
+        class="btn btn-secondary bg-white/20 sm:w-auto lg:w-[140px] border-3 tracking-tight mx-auto py-3 mb-8 md:w-1/4"
         id="show-how-it-works"
         target="_self"
         rel="noopener"
@@ -39,7 +39,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
         {callToAction.text}
       </button>
       <p class="text-center text-xl pb-10" id="explainer">
-        Like to know how KEYBACK works in detail?<br />Enquiring minds go ahead and click 'show' to reveal.
+        Want details?<br />Click 'show' button to see how KEYBACK works
       </p>
       <div id="hiw-steps" class="hidden">
         <div class="absolute z-0 left-1/2 -ml-2 w-1 h-[91%] dark:bg-[#FF5E0E] bg-gray-400" style="top:260px;"></div>
