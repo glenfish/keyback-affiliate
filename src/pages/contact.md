@@ -11,10 +11,8 @@ Business Development: bizdev@keyback.io
 
 General Contact: admin@keyback.io
 
-General Beef: beef@keyback.io (be nice)
-
 ---
 
-Keyback is a brand asset of Eternal Digital Assets LLC
+Keyback is an Eternal Digital Assets product
 
 8 The Green, Suite B, Dover DE 19901 USA
