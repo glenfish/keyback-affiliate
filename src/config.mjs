@@ -12,7 +12,7 @@ const CONFIG = {
     '🚀 Backup and restore your digital assets with multi-secure encryption and a Dead Mans Switch to pass it on to your loved ones after death.',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'dark:only', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: 'en',
   textDirection: 'ltr',
