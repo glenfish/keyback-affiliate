@@ -1317,6 +1317,10 @@ top:170px;
 
 /* animated text */
 
+.hidden-break {
+
+  padding-left: 8px;
+}
 
 @media only screen and (min-width: 619px ) {
   .animation-container {
@@ -1332,6 +1336,7 @@ top:170px;
 @media only screen and (max-width:525px ) {
   .hidden-break {
     display: block!important;
+    padding-left: 0!important;
   }
 }
 
