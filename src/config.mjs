@@ -9,7 +9,7 @@ const CONFIG = {
 
   title: 'Keyback - secure crypto backup, recovery and digital will',
   description:
-    '🚀 Backup and restore your digital assets with multi-secure encryption and a Dead Mans Switch to pass it on to your loved ones after death.',
+    '🚀 Backup and restore your digital assets with multi-secure encryption and a Deadman Switch to pass it on to your loved ones after death.',
   defaultImage: defaultImage,
 
   defaultTheme: 'dark:only', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
