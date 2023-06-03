@@ -98,32 +98,6 @@ const meta = {
     </Fragment>
   </Hero>
 
-  <Pricing
-    callToAction={{
-      text: 'Join Keyback',
-      href: 'https://clients.keyback.io/registration',
-      icon: 'tabler:basket',
-    }}
-    callToAction2={{
-      text: 'Credit Card',
-      href: '',
-      icon: 'tabler:credit-card',
-    }}
-    callToAction3={{
-      text: 'Bitcoin',
-      href: '',
-      icon: 'tabler:currency-bitcoin',
-    }}
-  >
-    <Fragment slot="title">
-      Get Crypto Secure.<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Keyback.</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Built for digital asset traders and investors.<br class="hidden md:inline" />Don't be the guy who lost his crypto!
-    </Fragment>
-  </Pricing>
-
   <!-- <HowItWorks /> -->
   <div class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
     <!-- Note Widget ******************* -->
@@ -131,7 +105,32 @@ const meta = {
     <!-- Features Widget *************** -->
     <AnimatedVideo />
     <Videos />
+    <Pricing
+      callToAction={{
+        text: 'Join Keyback',
+        href: 'https://clients.keyback.io/registration',
+        icon: 'tabler:basket',
+      }}
+      callToAction2={{
+        text: 'Credit Card',
+        href: '',
+        icon: 'tabler:credit-card',
+      }}
+      callToAction3={{
+        text: 'Bitcoin',
+        href: '',
+        icon: 'tabler:currency-bitcoin',
+      }}
+    >
+      <Fragment slot="title">
+        Get Crypto Secure.<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Keyback.</span>
+      </Fragment>
 
+      <Fragment slot="subtitle">
+        Built for digital asset traders and investors.<br class="hidden md:inline" />Don't be the guy who lost his
+        crypto!
+      </Fragment>
+    </Pricing>
     <!-- <Features
       highlight="Features"
       title="What you get with AstroWind"
