@@ -1858,13 +1858,13 @@ background-size: cover!important;
 } */
 
 .hiw-sticker {
-  position:relative;
-  display:inline-block;
+  position:relative!important;
+  display:inline-block!important;
   top:-1px!important;
+  
 }
 .hiw-headline {
-  display:inline;
-}
-.hiw-headline::after {
-  content: " ";
+  position:relative!important;
+  display:inline-block!important;
+  
 }
