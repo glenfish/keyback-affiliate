@@ -1333,7 +1333,7 @@ top:170px;
 
 }
 
-@media only screen and (max-width:525px ) {
+@media screen and (max-width:525px ) {
   .hidden-break {
     display: block!important;
     padding-left: 0!important;
@@ -1856,3 +1856,15 @@ background-size: cover!important;
   background-image: linear-gradient(rgba(2, 29, 57, 0.60), rgba(2, 29, 57, 0.60)), url('./images/pattern-bgnd.jpg');object-fit: cover;
   
 } */
+
+.hiw-sticker {
+  position:relative;
+  display:inline-block;
+  top:-1px!important;
+}
+.hiw-headline {
+  display:inline;
+}
+.hiw-headline::after {
+  content: " ";
+}
