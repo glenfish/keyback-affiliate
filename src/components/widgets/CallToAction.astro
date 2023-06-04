@@ -11,12 +11,17 @@ export interface Props {
   title?: string;
   description?: string;
   callToAction?: string | CallToAction;
+  callToAction2?: string | CallToAction;
+  callToAction3?: string | CallToAction;
+  image?: string | any; // TODO: find HTMLElementProps
 }
 
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   callToAction = await Astro.slots.render('callToAction'),
+  callToAction2 = await Astro.slots.render('callToAction2'),
+  callToAction3 = await Astro.slots.render('callToAction2'),
 } = Astro.props;
 ---
 
@@ -35,6 +40,24 @@ const {
           )
         }
         {subtitle && <p class="text-xl text-muted dark:text-slate-400" set:html={subtitle} />}
+        <div
+          class="px-6 pt-5 text-center lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-10 xl:p-3"
+          id="pricing-rhs"
+        >
+          <span class="text-xl font-bold leading-6 text-gray-900 dark:text-white pt-4 lg:pb-0"> RRP $1000</span><br
+            class="inline"
+          /><span class="dark:text-burntorange text-burntorange lg:text-3xl md:text-2xl sm:text-3xl">NOW 50% OFF!</span>
+
+          <h2
+            class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-7xl min-[1536px]:text-7xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-800 text-lcenter my-4"
+          >
+            <span class="text-xl pr-0 relative -top-8 text-gray-800 dark:text-white"> $</span>497
+          </h2>
+          <p class="text-lg font-bold leading-6 text-gray-900 dark:text-gray-200 lg:pt-0">Next 300 Members Only</p>
+          <p class="text-sm font-normal leading-9 text-gray-900 dark:text-gray-200 lg:pt-0">
+            then price returns to RRP
+          </p>
+        </div>
         {
           typeof callToAction === 'string' ? (
             <Fragment set:html={callToAction} />
@@ -51,6 +74,15 @@ const {
             )
           )
         }
+        <p class="mt-10 text-sm leading-5">
+          <span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl">
+            Pay with&nbsp;
+            {callToAction2.icon && <Icon name={callToAction2.icon} class="w-7 h-7 inline" title="Credit/Debit Card" />}
+          </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl"
+            >&nbsp;or
+            {callToAction3.icon && <Icon name={callToAction3.icon} class="w-7 h-7 inline" title="Bitcoin" />}
+          </span>
+        </p>
       </div>
     </div>
   </div>
