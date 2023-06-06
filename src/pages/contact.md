@@ -3,13 +3,17 @@ title: 'Contact Us'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Support questions: support@keyback.io
+Support questions:
+support@keyback.io
 
-Marketing / Sales: sales@keyback.io
+Marketing / Sales:
+sales@keyback.io
 
-Business Development: bizdev@keyback.io
+Business Development:
+bizdev@keyback.io
 
-General Contact: admin@keyback.io
+General Contact:
+admin@keyback.io
 
 ---
 
