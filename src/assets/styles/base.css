@@ -1876,24 +1876,21 @@ background-size: cover!important;
 }
 
 .neon-text {
-  /* font-size: 3.2rem; */
-  /* letter-spacing: 0.5rem; */
+
   text-shadow: 0 0 0.625rem var(--neon-color), 0 0 1.25rem var(--neon-color),
-    0 0 2.5rem var(--neon-color), 0 0 5rem var(--neon-color),
-    0 0 7.5rem var(--neon-color);
+    0 0 2.5rem var(--neon-color)
 
 }
 
 @media (max-width: 587px) {
   .neon-text {
-    /* font-size: 3.2rem; */
-    /* letter-spacing: 0.5rem; */
+
     text-shadow: 0 0 0.625rem var(--neon-color), 0 0 1.25rem var(--neon-color),
-      0 0 2.5rem var(--neon-color);
+    0 0 2.5rem var(--neon-color)
   
   }
 }
 
 :root {
-  --neon-color: #065196;
+  --neon-color: #043b6f;
 }
