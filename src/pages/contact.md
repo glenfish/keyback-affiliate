@@ -4,15 +4,19 @@ layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 Support questions:
+
 support@keyback.io
 
 Marketing / Sales:
+
 sales@keyback.io
 
 Business Development:
+
 bizdev@keyback.io
 
 General Contact:
+
 admin@keyback.io
 
 ---
