@@ -266,7 +266,9 @@ import { SITE } from '~/config.mjs';
     const d = new Date();
     d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
     let expires = 'expires=' + d.toUTCString();
-    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/' + ';domain=' + domain;
+    if (cname == 'kb_ref' || cname == 'tap_vid') {
+      document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/' + ';domain=' + domain;
+    }
   }
 
   document.addEventListener('DOMContentLoaded', () => {
