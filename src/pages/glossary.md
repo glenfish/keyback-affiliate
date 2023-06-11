@@ -3,17 +3,21 @@ title: 'Glossary'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-#Glossary
+# Glossary
 
-###Master File
+### Master File
 A spreadsheet (.csv) or A plain text file (.txt) of private keys, backup seed phrases and login information. 
 
 
-###Master Key
+### Master Key.
 
 
-###Beneficiaries
+### Beneficiaries.
 
 
-###Benefactor
+### Benefactor.
 
+
+### Trustees.
+
+### Health Check.
