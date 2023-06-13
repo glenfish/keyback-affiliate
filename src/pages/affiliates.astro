@@ -1,0 +1,17 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Affiliate from '~/components/widgets/Affiliate.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <anchor id="top" class="scroll-mt-20"></anchor>
+  <Affiliate />
+</Layout>
