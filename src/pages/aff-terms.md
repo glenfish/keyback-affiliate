@@ -45,9 +45,9 @@ Affiliates who refer other affiliates to join the Keyback Affiliate Program, wil
 
 ## Payment
 
-Accrued referral fees are paid via Litecoin (LTC) or Stellar Lumens (XLM) once per month on a NET30 basis. This means sales commissions are paid 30 days from the end of the month they were generated. For example a sale generated via your affiliate referral link on January 1st and another on January 31st will both be accounted and paid for within 10 days of March 1st.
+Accrued referral fees are paid once per month on a NET30 basis. This means sales commissions are paid 30 days from the end of the month they were generated. For example a sale generated via your affiliate referral link on January 1st and another on January 31st will both be accounted and paid for within 10 days of March 1st.
 
-All affiliates must have a valid Litecoin or Stellar wallet to receive payment. All payouts will be converted from USD to the crypto equivalent on the day that payment is made, at current rates per coinmarketcap.com Affiliates may choose which account (LTC or XLM) is their primary account to be paid into. It is at our discretion which account we make payment to based on your addresses supplied. You are responsible for ensuring these payment details are correct in up to date in your Affiliate Admin System area. We are not responsible for payment to a wrong address based on affiliate negligence. We do not offer payment via cheque/check, credit card, cash or other method.
+All affiliates must have a valid account as a requirement on payment, and it must be on file with us via the Affiliate Admin System. You are responsible for ensuring these payment details are correct and current. We are not responsible for payment to a wrong address based on affiliate negligence.
 
 Customer payments refunded or payments charged-back due to credit card fraud do not qualify for referral fees. We may delay crediting of referral fees subject to risk analysis considerations and Anti-Money Laundering procedures.
 
@@ -59,7 +59,7 @@ We reserve the right to disqualify referral fees earned through fraudulent, ille
 
 All fees are exclusive of all taxes, charges, levies, assessments and other fees of any kind imposed on your involvement in this Agreement and shall be the responsibility of, and payable by you.
 
-We reserve the right to check and change commissions on the basis of orders actually paid, the notification e-mail or tracked sale is not understood as a confirmed commission until NET30. Every payment will be verified based on real transactions and tracked sales and commissions may by updated manually to reflect orders both successful, cancelled, refunded and fraudulent. In order for a valid sale to be paid a comission the customer must remain active and not cancel or chargeback within 30 days from the end of the month the sale was made.
+We reserve the right to check and change commissions on the basis of orders actually paid, the notification e-mail or tracked sale is not understood as a confirmed commission until NET30. Every payment will be verified based on real transactions and tracked sales and commissions may by updated manually to reflect orders both successful, cancelled, refunded and fraudulent. In order for a valid sale to be paid a commission the customer must remain active and not cancel or chargeback within 30 days from the end of the month the sale was made.
 
 ## Customer Definition
 
