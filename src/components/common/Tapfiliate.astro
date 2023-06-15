@@ -5,7 +5,7 @@
     const n = new Date();
     n.setTime(n.getTime() + 24 * o * 60 * 60 * 1e3);
     let s = 'expires=' + n.toUTCString();
-    document.cookie = e + '=' + t + ';' + s + ';path=/' + ';domain=.keyback.app' + ';Samesite=Lax';
+    document.cookie = e + '=' + t + ';' + s + ';path=/' + ';domain=.keyback.io' + ';Samesite=Lax';
   }
 
   function convert(json) {
@@ -14,14 +14,14 @@
 
   var returnedData;
   var clickID = '';
-  const API_URL = 'https://app.keyback.app/api/tapfiliate/click-id?';
+  const API_URL = 'https://app.keyback.io/api/tapfiliate/click-id?';
   function sendParams(params) {
     fetch(API_URL + params, {
       method: 'GET',
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'https://keyback.app',
+        'Access-Control-Allow-Origin': 'https://keyback.io',
       },
     })
       .then((response) => response.json())
@@ -36,7 +36,7 @@
   }
 
   let urlParams = '';
-  const landingPage = 'https://keyback.app';
+  const landingPage = 'https://keyback.io';
 
   document.addEventListener('DOMContentLoaded', () => {
     const e = new URLSearchParams(window.location.search),
