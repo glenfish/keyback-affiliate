@@ -110,7 +110,7 @@ Any dispute relating in any way to this Agreement (including any actual or alleg
 
 ## Notice
 
-All notices given by you to us must be given to Keyback at admin@keyback.io. We may give notice to you at the e-mail address you provided to us when registering. Notice will be deemed received and properly served 24 hours after an e-mail is sent. In proving the service of any notice, it will be sufficient to prove in the case of an e-mail, that such e-mail was sent to the specified e-mail address of the addressee.
+All notices given by you to us must be given to Keyback at admin<!-- dsadasdasdasda -->@keyback.io. We may give notice to you at the e-mail address you provided to us when registering. Notice will be deemed received and properly served 24 hours after an e-mail is sent. In proving the service of any notice, it will be sufficient to prove in the case of an e-mail, that such e-mail was sent to the specified e-mail address of the addressee.
 
 ## Events outside our control
 
