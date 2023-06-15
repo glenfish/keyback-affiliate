@@ -45,6 +45,8 @@ Affiliates who refer other affiliates to join the Keyback Affiliate Program, wil
 
 ## Payment
 
+We only make payment in cryptocurrency. There are four options: Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC) and Stellar Lumens (XLM). Please make sure you add a VALID public address for ONE and only one of these types of cryptocurrency. If you enter public addresses for more than one then we will make a selection for you. If you only want payment to BTC make sure you leave the other options blank.
+
 Accrued referral fees are paid once per month on a NET30 basis. This means sales commissions are paid 30 days from the end of the month they were generated. For example a sale generated via your affiliate referral link on January 1st and another on January 31st will both be accounted and paid for within 10 days of March 1st.
 
 All affiliates must have a valid account as a requirement on payment, and it must be on file with us via the Affiliate Admin System. You are responsible for ensuring these payment details are correct and current. We are not responsible for payment to a wrong address based on affiliate negligence.
