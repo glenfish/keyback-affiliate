@@ -5,19 +5,19 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 Support questions:
 
-support@keyback.io
+<span class="text-yellow-200">support<!-- dsadasdgbasdasda -->@keyback.io</span>
 
 Marketing / Sales:
 
-sales@keyback.io
+<span class="text-yellow-200">sales<!-- dsadasd3asdasda -->@keyback.io</span>
 
 Business Development:
 
-bizdev@keyback.io
+<span class="text-yellow-200">bizdev<!-- dsadasdyasdasda -->@keyback.io</span>
 
 General Contact:
 
-admin@keyback.io
+<span class="text-yellow-200">admin<!-- dsad3asda -->@keyback.io</span>
 
 ---
 
