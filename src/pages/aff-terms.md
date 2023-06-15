@@ -5,7 +5,8 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 By signing up to be an affiliate in the Keyback Affiliate Program (the “Program”) you agree to be bound by the following terms and conditions (the “Terms”). Please ensure that you read them carefully before signing up. These Terms are a legal agreement between Eternal Digital Assets LLC, a company registered at 8 The Green, Suite B, Dover, Delaware 19901, United States. 'Keyback' is a brand asset owned and operated by Eternal Digital Assets (“Keyback”, "Eternal Digital Assets", “we”, “us”) and You (the “Affiliate”, “you”).
 
-We reserve the right to update and change the Terms from time to time without notice. Any amendments, modifications, enhancements or changes to the Program including the release of new features and resources made available by us from time to time shall be subject to these Terms. Continued use of the Program after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms at any time at: https://affiliates.keyback.io/programs/keyback/tos/
+We reserve the right to update and change the Terms from time to time without notice. Any amendments, modifications, enhancements or changes to the Program including the release of new features and resources made available by us from time to time shall be subject to these Terms. Continued use of the Program after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms at any time at:
+<a href="https://affiliates.keyback.io/programs/keyback/tos/" target="_blank">affiliates.keyback.io/programs/keyback/tos/</a>
 
 Any violation of these Terms may result in, among other things, termination or suspension of your rights to be an Affiliate and forfeiture of any outstanding affiliate referral fee payments earned during the violation.
 
