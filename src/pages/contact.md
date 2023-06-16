@@ -5,7 +5,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 Support Tickets:
 
-<span class="text-yellow-200">support<!-- dsadasdgbasdasda -->@keyback.freshdesk.com</span>
+<a href="https://keyback.freshdesk.com/" target="_blank" class="text-yellow-200">https://keyback.freshdesk.com/</a>
 
 Marketing / Sales:
 
