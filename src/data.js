@@ -38,19 +38,23 @@ export const headerData = {
       text: 'Pages',
       links: [
         {
-          text: 'About us',
-          href: './about',
+          text: 'About',
+          href: getPermalink('./about'),
         },
         {
           text: 'Contact',
-          href: './contact',
+          href: getPermalink('./contact'),
+        },
+        {
+          text: 'Support',
+          href: 'https://keyback.freshdesk.com/',
         },
         {
           text: 'Terms',
           href: getPermalink('./terms'),
         },
         {
-          text: 'Privacy policy',
+          text: 'Privacy',
           href: getPermalink('./privacy'),
         },
       ],
