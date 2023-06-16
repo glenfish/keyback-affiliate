@@ -39,11 +39,11 @@ export const headerData = {
       links: [
         {
           text: 'About',
-          href: getPermalink('./about'),
+          href: './about',
         },
         {
           text: 'Contact',
-          href: getPermalink('./contact'),
+          href: './contact',
         },
         {
           text: 'Support',
