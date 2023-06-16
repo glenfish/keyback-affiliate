@@ -3,9 +3,9 @@ title: 'Contact Us'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Support questions:
+Support Tickets:
 
-<span class="text-yellow-200">support<!-- dsadasdgbasdasda -->@keyback.io</span>
+<span class="text-yellow-200">support<!-- dsadasdgbasdasda -->@keyback.freshdesk.com</span>
 
 Marketing / Sales:
 
