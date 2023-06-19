@@ -29,6 +29,7 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
         How It Works
       </h2>
       <!-- <span id="in-detail" class="mx-auto relative -top-5">(in detail)</span> -->
+
       <button
         class="btn btn-secondary bg-white/20 sm:w-auto lg:w-[140px] border-3 tracking-tight mx-auto py-3 mb-8 md:w-1/4"
         id="show-how-it-works"
@@ -521,6 +522,10 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
   function showThis(id) {
     let element1 = document.getElementById(id);
     element1.classList.remove('hidden');
+    if (id == 'hiw-steps') {
+      let element3 = document.getElementById('show-how-it-works');
+      element3.classList.add('hidden');
+    }
   }
   function hideThis(id) {
     let element2 = document.getElementById(id);
