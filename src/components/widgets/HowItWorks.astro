@@ -32,15 +32,13 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
       <button
         class="btn btn-secondary bg-white/20 sm:w-auto lg:w-[140px] border-3 tracking-tight mx-auto py-3 mb-8 md:w-1/4"
         id="show-how-it-works"
-        target="_self"
-        rel="noopener"
+        onclick="showThis('hiw-steps')"
       >
-        {callToAction.icon && <Icon name={callToAction.icon} class="w-3 h-5 mr-1 " />}
-        {callToAction.text}
+        Show
       </button>
       <p class="text-center text-xl pb-10" id="explainer">See how it works under the hood</p>
       <div id="hiw-steps" class="hidden">
-        <div class="absolute z-0 left-1/2 -ml-2 w-1 h-[89%] dark:bg-[#FF5E0E] bg-gray-400" style="top:260px;"></div>
+        <div class="absolute top-[380px] z-0 left-1/2 -ml-2 w-1 h-[89%] dark:bg-[#FF5E0E] bg-gray-400" style=""></div>
 
         <div
           class="hiw-box dark:shadow-lg relative z-10 grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 dark:border-4 border-2 border-gray-200 dark:border-[#FF5E0E] rounded-xl dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black bg-gray-100"
@@ -518,3 +516,14 @@ const { callToAction = await Astro.slots.render('callToAction') } = Astro.props;
     </div>
   </section>
 </section>
+
+<script is:inline>
+  function showThis(id) {
+    let element1 = document.getElementById(id);
+    element1.classList.remove('hidden');
+  }
+  function hideThis(id) {
+    let element2 = document.getElementById(id);
+    element2.classList.add('hidden');
+  }
+</script>
