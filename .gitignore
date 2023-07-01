@@ -23,3 +23,11 @@ package-lock.json
 pnpm-lock.yaml
 
 .astro
+src/components/widgets/Nick.astro
+.gitignore
+.gitignore
+src/components/widgets/Nick4.astro
+src/components/widgets/Nick3.astro
+src/components/widgets/Nick2.astro
+src/components/widgets/Nick.astro
+src/components/widgets/Toss.astro
