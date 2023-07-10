@@ -35,6 +35,23 @@
       .catch((error) => console.error(error));
   }
 
+  function sendCC(params) {
+    fetch(API_URL + params, {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'https://keyback.io',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setCookie('cc', data.data.id, 30);
+      })
+
+      .catch((error) => console.error(error));
+  }
+
   let urlParams = '';
   const landingPage = 'https://keyback.io';
 
@@ -47,7 +64,7 @@
         }),
         {}
       );
-    console.log(t);
+    // console.log(t);
 
     let o = '';
     Object.keys(t).forEach((e) => {
@@ -58,13 +75,19 @@
       } else {
         urlParams += e + '=' + t[e] + '&';
       }
+
+      const couponCode = e == 'cc' ? t[e] : '';
+      if (couponCode != '') {
+        console.log('code: ' + t[e].toLowerCase());
+        // sendCC('cc=' + t[e].toLowerCase());
+      }
       //   setCookie("kb_" + e, t[e], 90), o += "kb_" + e + " ",
       //   console.log("kb_" + e, t[e])
     }),
       //  setCookie("kb_keylist", o, 90)
       (urlParams += 'referrer=' + encodeURIComponent(document.referrer) + '&');
     urlParams += 'landing_page=' + encodeURIComponent(landingPage);
-    console.log(urlParams);
+    // console.log(urlParams);
 
     if (isAffiliate) {
       sendParams(urlParams);
