@@ -108,7 +108,6 @@ export const footerData = {
     {
       title: 'Support',
       links: [
-        { text: 'Contact Us', href: './contact' },
         { text: 'Knowledgbase', href: 'https://support.keyback.io' },
         { text: 'Help Ticket', href: 'https://keyback.freshdesk.com/support/tickets/new' },
       ],
@@ -117,6 +116,7 @@ export const footerData = {
       title: 'Company',
       links: [
         { text: 'About', href: './about' },
+        { text: 'Contact', href: './contact' },
         { text: 'Media Assets', href: './media' },
         // { text: 'Articles', href: './blog' },
         // { text: 'Press', href: './press' },
