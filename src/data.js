@@ -109,6 +109,7 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Knowledgbase', href: 'https://support.keyback.io' },
+        { text: 'Guarantee', href: '/guarantee' },
         { text: 'Help Ticket', href: 'https://keyback.freshdesk.com/support/tickets/new' },
       ],
     },
