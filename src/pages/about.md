@@ -13,6 +13,6 @@ When we pop off the face of the earth, which most of us will do at some point, w
 
 So over a period of about 3 years we came up with Keyback. We're always building, refining, adding new stuff. We're dedicated to its success and in making it totally rock solid in every way.
 
-If you have any questions, comments, insights, bug reports, or musings, please [contact us](https://keyback.io/contact).
+If you have any questions, comments, insights, bug reports, or musings, [contact us](https://keyback.io/contact) or submit a ticket [here](https://keyback.freshdesk.com/support/tickets/new).
 
 We hope to welcome you to our Keyback family 😀
