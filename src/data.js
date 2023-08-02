@@ -118,7 +118,7 @@ export const footerData = {
       links: [
         { text: 'About', href: './about' },
         { text: 'Contact', href: './contact' },
-        { text: 'Media Assets', href: './media' },
+        { text: 'Media', href: './media' },
         // { text: 'Articles', href: './blog' },
         // { text: 'Press', href: './press' },
       ],
