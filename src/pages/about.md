@@ -18,9 +18,9 @@ If you have any questions, comments, insights, bug reports, or musings, [contact
 We hope to welcome you to our Keyback family 😀
 
 <br>
-Co-CEO<br>
+CEO<br>
 David Lister<br><br>
-Founder & Co-CEO<br>
+Founder & CMO<br>
 Nic Fehlberg<br>
 <br>
 CTO<br>
