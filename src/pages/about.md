@@ -19,7 +19,7 @@ We hope to welcome you to our Keyback family 😀
 
 <br>
 Co-CEO<br>
-David Lister<br><br>
+DJ Lister<br><br>
 Founder & Co-CEO<br>
 Nic Fehlberg<br>
 <br>
