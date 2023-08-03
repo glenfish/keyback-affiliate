@@ -16,3 +16,12 @@ So over a period of about 3 years we came up with Keyback. We're always building
 If you have any questions, comments, insights, bug reports, or musings, [contact us](https://keyback.io/contact) or submit a ticket [here](https://keyback.freshdesk.com/support/tickets/new).
 
 We hope to welcome you to our Keyback family 😀
+
+<br>
+Co-CEO<br>
+David Lister<br><br>
+Founder & Co-CEO<br>
+Nic Fehlberg<br>
+<br>
+CTO<br>
+Xenomorfius<br>
