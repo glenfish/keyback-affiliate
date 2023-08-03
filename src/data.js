@@ -47,7 +47,7 @@ export const headerData = {
         },
         {
           text: 'Support',
-          href: 'https://keyback.freshdesk.com/',
+          href: 'https://support.keyback.io/',
         },
         {
           text: 'Terms',
@@ -59,19 +59,7 @@ export const headerData = {
         },
       ],
     },
-    // {
-    //   text: 'Affiliates',
-    //   links: [
-    //     {
-    //       text: 'Sign In',
-    //       href: 'https://affiliates.keyback.io/login',
-    //     },
-    //     {
-    //       text: 'Sign Up',
-    //       href: 'https://affiliates.keyback.io/',
-    //     },
-    //   ],
-    // },
+
     {
       text: 'Sign In',
       href: 'https://clients.keyback.io/login',
@@ -81,9 +69,7 @@ export const headerData = {
       href: 'https://clients.keyback.io/registration',
     },
   ],
-  // actions: [
-  //   { type: 'button', text: 'Sign In', href: 'https://clients.keyback.io/login' }
-  // ],
+
 };
   
 export const footerData = {
