@@ -7,8 +7,9 @@
     Cache-Control = "public, max-age=31536000, immutable"
 [[redirects]]
 from = "https://www.specials.keyback.io/*"
-to = "https://specials.keyback.io/:splat 301!"
+to = "https://specials.keyback.io/:splat"
 status = 301
+force = true
 
 
      
