@@ -2,23 +2,6 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    // {
-    //   text: 'Landing',
-    //   links: [
-    //     {
-    //       text: 'Sass',
-    //       href: getPermalink('/landing/saas'),
-    //     },
-    //     {
-    //       text: 'Startup',
-    //       href: getPermalink('/landing/startup'),
-    //     },
-    //     {
-    //       text: 'Mobile App',
-    //       href: getPermalink('/landing/mobile-app'),
-    //     },
-    //   ],
-    // },
      {
        text: 'Videos',
        href: getPermalink('/videos'),
@@ -39,11 +22,11 @@ export const headerData = {
       links: [
         {
           text: 'About',
-          href: './about',
+          href: getPermalink('/about'),
         },
         {
           text: 'Contact',
-          href: './contact',
+          href: getPermalink('/contact'),
         },
         {
           text: 'Support',
@@ -51,11 +34,11 @@ export const headerData = {
         },
         {
           text: 'Terms',
-          href: getPermalink('./terms'),
+          href: getPermalink('/terms'),
         },
         {
           text: 'Privacy',
-          href: getPermalink('./privacy'),
+          href: getPermalink('/privacy'),
         },
       ],
     },
@@ -78,35 +61,34 @@ export const footerData = {
       title: 'Product',
       links: [
         { text: 'What Is Keyback', href: './#videos' },
-        { text: 'How It Works', href: './#how-it-works-section' },
-        { text: 'Pricing', href: './#pricing' },
+        { text: 'How It Works', href: getPermalink('/#how-it-works-section')},
+        { text: 'Pricing', href: getPermalink('/#pricing') },
 
       ],
     },
     {
       title: 'Affiliates',
       links: [
-        { text: 'Affiliates', href: '/affiliates' },
-        { text: 'Influencers', href: '/influencers' },
-        { text: 'Terms', href: '/aff-terms' },
+        { text: 'Affiliates', href: getPermalink('/affiliates') },
+        { text: 'Influencers', href: getPermalink('/influencers') },
+        { text: 'Terms', href: getPermalink('/aff-terms') },
       ],
     },
     {
       title: 'Support',
       links: [
         { text: 'Knowledgbase', href: 'https://support.keyback.io' },
-        { text: 'Guarantee', href: '/guarantee' },
+        { text: 'Guarantee', href: getPermalink('/guarantee') },
         { text: 'Help Ticket', href: 'https://keyback.freshdesk.com/support/tickets/new' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: './about' },
-        { text: 'Contact', href: './contact' },
-        { text: 'Media', href: './media' },
+        { text: 'About', href: getPermalink('/about') },
+        { text: 'Contact', href: getPermalink('/contact') },
+        { text: 'Media', href: getPermalink('/media') },
         // { text: 'Articles', href: './blog' },
-        // { text: 'Press', href: './press' },
       ],
     },
   ],
