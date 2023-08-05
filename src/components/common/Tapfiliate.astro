@@ -1,7 +1,8 @@
 <script>
   const referringURL = window.location.href;
   if (referringURL.includes('specials.keyback.io/go/')) {
-    console.log('Referrer: ' + referringURL);
+    let result = referringURL.replace('https://specials.keyback.io/go/', '');
+    console.log('Referrer: ' + result);
   }
 </script>
 
