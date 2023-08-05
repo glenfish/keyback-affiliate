@@ -7,7 +7,7 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Keyback - secure crypto backup, recovery and deadman switch',
+  title: 'Keyback - Your secure crypto backup, recovery and deadman switch',
   description:
     '🚀 Backup and restore your digital assets with multi-encryption and a Deadman Switch to pass on cryptos to your loved ones after death.',
   defaultImage: defaultImage,
