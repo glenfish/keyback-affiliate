@@ -3,7 +3,7 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'KEYBACK',
 
-  origin: 'https://keyback.io',
+  origin: 'https://specials.keyback.io',
   basePathname: '/',
   trailingSlash: false,
 
