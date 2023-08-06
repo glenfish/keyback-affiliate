@@ -65,17 +65,20 @@
         {}
       );
     // console.log(t);
-
+    var refResult = '';
     const referringURL = window.location.href;
     if (referringURL.includes('specials.keyback.io/go/')) {
-      let result = referringURL.replace('https://specials.keyback.io/go/', '');
-      console.log('Referrer: ' + result);
-
-      if (result != '') {
-        urlParams += 'referral_code=' + result + '&';
-        setCookie('ref', result, 90);
-        isAffiliate = true;
-      }
+      refResult = referringURL.replace('https://specials.keyback.io/go/', '');
+      console.log('Go Referrer: ' + refResult);
+    }
+    if (referringURL.includes('specials.keyback.io/pro/')) {
+      refResult = referringURL.replace('https://specials.keyback.io/pro/', '');
+      console.log('Pro Referrer: ' + refResult);
+    }
+    if (refResult != '') {
+      urlParams += 'referral_code=' + refResult + '&';
+      setCookie('ref', refResult, 90);
+      isAffiliate = true;
     }
 
     let o = '';
