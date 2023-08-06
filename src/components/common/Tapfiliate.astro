@@ -69,11 +69,11 @@
     const referringURL = window.location.href;
     if (referringURL.includes('specials.keyback.io/go/')) {
       refResult = referringURL.replace('https://specials.keyback.io/go/', '');
-      console.log('Go Referrer: ' + refResult);
+      // console.log('Go Referrer: ' + refResult);
     }
     if (referringURL.includes('specials.keyback.io/pro/')) {
       refResult = referringURL.replace('https://specials.keyback.io/pro/', '');
-      console.log('Pro Referrer: ' + refResult);
+      // console.log('Pro Referrer: ' + refResult);
     }
     if (refResult != '') {
       urlParams += 'referral_code=' + refResult + '&';
