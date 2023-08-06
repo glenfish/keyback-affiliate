@@ -21,7 +21,7 @@
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'https://keyback.io',
+        'Access-Control-Allow-Origin': 'https://specials.keyback.io',
       },
     })
       .then((response) => response.json())
@@ -53,7 +53,7 @@
   }
 
   let urlParams = '';
-  const landingPage = 'https://keyback.io';
+  const landingPage = window.location.href;
 
   document.addEventListener('DOMContentLoaded', () => {
     const e = new URLSearchParams(window.location.search),
