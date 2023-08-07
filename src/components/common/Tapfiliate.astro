@@ -52,6 +52,8 @@
       })
       .then((data) => {
         newPricing = data.data.discounted_price;
+        document.getElementById('price-1').innerText = newPricing;
+        document.getElementById('price-2').innerText = newPricing;
       })
 
       // .then(data => console.log(data))
@@ -95,8 +97,5 @@
       getClickID(urlParams);
       getPricing(refResult);
     }
-
-    document.getElementById('price-1').innerText = newPricing;
-    document.getElementById('price-2').innerText = newPricing;
   });
 </script>
