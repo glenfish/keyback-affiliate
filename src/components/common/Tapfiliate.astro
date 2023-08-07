@@ -1,4 +1,5 @@
 <script is:inline>
+  var newPricing = '';
   var isAffiliate = false;
   var myMap;
   function setCookie(e, t, o) {
@@ -14,9 +15,9 @@
 
   var returnedData;
   var clickID = '';
-  const API_URL = 'https://app.keyback.io/api/tapfiliate/click-id?';
-  function sendParams(params) {
-    fetch(API_URL + params, {
+  const API_URL_CLICK = 'https://app.keyback.io/api/tapfiliate/click-id?';
+  function getClickID(params) {
+    fetch(API_URL_CLICK + params, {
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -35,8 +36,9 @@
       .catch((error) => console.error(error));
   }
 
-  function sendCC(params) {
-    fetch(API_URL + params, {
+  const API_URL_PRICING = 'https://app.keyback.io/api/coupons/discount-by-ref/';
+  function getPricing(params) {
+    fetch(API_URL_PRICING + params, {
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -45,10 +47,13 @@
       },
     })
       .then((response) => response.json())
+      // .then(data => {console.log('CLICK ID: ' + data.data.pricing)} )
       .then((data) => {
-        setCookie('cc', data.data.id, 30);
+        newPricing = data.data.discounted_price;
       })
 
+      // .then(data => console.log(data))
+      // .then(data => convert(data))
       .catch((error) => console.error(error));
   }
 
@@ -81,31 +86,15 @@
       isAffiliate = true;
     }
 
-    let o = '';
-    Object.keys(t).forEach((e) => {
-      // if (e == 'ref') {
-      //   urlParams += 'referral_code=' + t[e] + '&';
-      //   setCookie('ref', t[e], 90);
-      //   isAffiliate = true;
-      // } else {
-      //   urlParams += e + '=' + t[e] + '&';
-      // }
-
-      const couponCode = e == 'cc' ? t[e] : '';
-      if (couponCode != '') {
-        // console.log('code: ' + t[e].toLowerCase());
-        // sendCC('cc=' + t[e].toLowerCase());
-      }
-      //   setCookie("kb_" + e, t[e], 90), o += "kb_" + e + " ",
-      //   console.log("kb_" + e, t[e])
-    }),
-      //  setCookie("kb_keylist", o, 90)
-      (urlParams += 'referrer=' + encodeURIComponent(document.referrer) + '&');
+    urlParams += 'referrer=' + encodeURIComponent(document.referrer) + '&';
     urlParams += 'landing_page=' + encodeURIComponent(landingPage);
-    // console.log(urlParams);
 
     if (isAffiliate) {
-      sendParams(urlParams);
+      getClickID(urlParams);
+      getPricing(refResult);
     }
+
+    document.getElementById('price-1').innerText = newPricing;
+    document.getElementById('price-2').innerText = newPricing;
   });
 </script>
