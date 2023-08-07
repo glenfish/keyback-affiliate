@@ -49,8 +49,6 @@
       .then((response) => response.json())
       .then((data) => {
         console.log('price: ' + data.data.discounted_price);
-      })
-      .then((data) => {
         newPricing = data.data.discounted_price;
         console.log(newPricing);
         document.getElementById('price1').textContent = '999';
