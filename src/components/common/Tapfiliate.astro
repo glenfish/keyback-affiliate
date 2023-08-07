@@ -47,7 +47,9 @@
       },
     })
       .then((response) => response.json())
-      // .then(data => {console.log('CLICK ID: ' + data.data.pricing)} )
+      .then((data) => {
+        console.log('price: ' + data.data.discounted_price);
+      })
       .then((data) => {
         newPricing = data.data.discounted_price;
       })
