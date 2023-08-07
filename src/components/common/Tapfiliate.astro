@@ -52,8 +52,9 @@
       })
       .then((data) => {
         newPricing = data.data.discounted_price;
-        document.getElementById('price-1').innerText = newPricing;
-        document.getElementById('price-2').innerText = newPricing;
+        console.log(newPricing);
+        document.getElementById('price1').textContent = '999';
+        document.getElementById('price2').textContent = newPricing;
       })
 
       // .then(data => console.log(data))
