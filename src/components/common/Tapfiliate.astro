@@ -10,7 +10,12 @@
   var price1 = document.getElementById('price-1');
   var price2 = document.getElementById('price-2');
   var discount1 = document.getElementById('percentage-discount-1');
+  var discount1b = document.getElementById('percentage-discount-1b');
   var discount2 = document.getElementById('percentage-discount-2');
+  var discountedPrice = '497';
+  var discountPercentage = '75';
+  var defaultPrice = '1988';
+  var discountedAmount = '1491';
   var couponStatus = '';
   var couponMessage = '';
   function setCookie(e, t, o) {
@@ -58,18 +63,20 @@
       .then((response) => response.json())
       .then((data) => {
         // console.log('price: ' + data.data.discounted_price);
-        couponStatus = data.status;
-        couponMessage = data.message;
-        console.log('status: ' + couponStatus + '/nmessage: ' + couponMessage);
-        let discountedPrice = data.data.discounted_price;
-        let discountPercentage = data.data.discount_percentage;
-        let defaultPrice = data.data.default_price;
-        let discountedAmount = data.data.discount_amount;
+        couponStatus = data.message;
+        // console.log('status: ' + couponStatus);
+        if (!couponStatus.includes('inactive') || !couponStatus.includes('coupon not found') || !couponStatus) {
+          discountedPrice = data.data.discounted_price;
+          discountPercentage = data.data.discount_percentage;
+          defaultPrice = data.data.default_price;
+          discountedAmount = data.data.discount_amount;
+        }
         retail1.textContent = defaultPrice;
         retail2.textContent = defaultPrice;
         price1.textContent = discountedPrice;
         price2.textContent = discountedPrice;
         discount1.textContent = discountPercentage;
+        discount1b.textContent = discountPercentage;
         discount2.textContent = discountPercentage;
       })
 
