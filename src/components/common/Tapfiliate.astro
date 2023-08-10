@@ -1,7 +1,18 @@
 <script is:inline>
+  const API_URL_CLICK = 'https://app.keyback.io/api/tapfiliate/click-id?';
+  const API_URL_PRICING = 'https://app.keyback.io/api/coupons/discount-by-ref/';
+  var clickID = '';
   var newPricing = '';
   var isAffiliate = false;
   var myMap;
+  var retail1 = document.getElementById('retail-1');
+  var retail1 = document.getElementById('retail-2');
+  var price1 = document.getElementById('price-1');
+  var price2 = document.getElementById('price-2');
+  var discount1 = document.getElementById('percentage-discount-1');
+  var discount2 = document.getElementById('percentage-discount-2');
+  var couponStatus = '';
+  var couponMessage = '';
   function setCookie(e, t, o) {
     const n = new Date();
     n.setTime(n.getTime() + 24 * o * 60 * 60 * 1e3);
@@ -11,11 +22,12 @@
 
   function convert(json) {
     myMap = new Map(Object.entries(JSON.parse(json)));
+    return myMap;
   }
 
-  var returnedData;
-  var clickID = '';
-  const API_URL_CLICK = 'https://app.keyback.io/api/tapfiliate/click-id?';
+  
+  
+  
   function getClickID(params) {
     fetch(API_URL_CLICK + params, {
       method: 'GET',
@@ -26,9 +38,12 @@
       },
     })
       .then((response) => response.json())
-      // .then(data => {console.log('CLICK ID: ' + data.data.id)} )
-      .then((data) => {
-        setCookie('click_id', data.data.id, 90);
+      .then(data => {
+        clickID = data.data.id;
+        // console.log('CLICK ID: ' + data.data.id)
+      })
+      .then((data => {
+        setCookie('click_id', clickID, 90);
       })
 
       // .then(data => console.log(data))
@@ -36,7 +51,7 @@
       .catch((error) => console.error(error));
   }
 
-  const API_URL_PRICING = 'https://app.keyback.io/api/coupons/discount-by-ref/';
+  
   function getPricing(params) {
     fetch(API_URL_PRICING + params, {
       method: 'GET',
@@ -49,10 +64,19 @@
       .then((response) => response.json())
       .then((data) => {
         // console.log('price: ' + data.data.discounted_price);
-        newPricing = data.data.discounted_price;
-        // console.log(newPricing);
-        document.getElementById('price1').textContent = newPricing;
-        document.getElementById('price2').textContent = newPricing;
+        couponStatus = data.status;
+        couponMessage = data.message;
+        console.log('status: ' + couponStatus + '/nmessage: ' + couponMessage);
+        discountedPrice = data.data.discounted_price;
+        discountPercentage = data.data.discount_percentage;
+        defaultPrice = data.data.default_price;
+        discountedAmount = data.data.discount_amount
+        retail1.textContent = defaultPrice;
+        retail2.textContent = defaultPrice;
+        price1.textContent = discountedPrice;
+        price2.textContent = discountedPrice;
+        discount1.textContent = discountPercentage;
+        discount2.textContent = discountPercentage;
       })
 
       // .then(data => console.log(data))
