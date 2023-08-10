@@ -14,6 +14,7 @@
   var discount2 = document.getElementById('percentage-discount-2');
   var discountedPrice = '497';
   var discountPercentage = '75';
+  var discountPercentageRounded = '75';
   var defaultPrice = '1988';
   var discountedAmount = '1491';
   var couponStatus = '';
@@ -63,7 +64,6 @@
       .then((data) => {
         // console.log('price: ' + data.data.discounted_price);
         couponStatus = data.message;
-        let discountPercentageRounded;
         console.log('status: ' + couponStatus);
         if (
           couponStatus !== 'inactive' &&
