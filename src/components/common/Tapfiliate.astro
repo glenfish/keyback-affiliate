@@ -17,7 +17,6 @@
   var defaultPrice = '1988';
   var discountedAmount = '1491';
   var couponStatus = '';
-  var couponMessage = '';
   function setCookie(e, t, o) {
     const n = new Date();
     n.setTime(n.getTime() + 24 * o * 60 * 60 * 1e3);
@@ -65,7 +64,7 @@
         // console.log('price: ' + data.data.discounted_price);
         couponStatus = data.message;
         // console.log('status: ' + couponStatus);
-        if (!couponStatus.includes('inactive') || !couponStatus.includes('coupon not found') || !couponStatus) {
+        if (couponStatus != 'inactive' || couponStatus != 'coupon not found' || couponStatus != null) {
           discountedPrice = data.data.discounted_price;
           discountPercentage = data.data.discount_percentage;
           defaultPrice = data.data.default_price;
