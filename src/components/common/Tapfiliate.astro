@@ -63,7 +63,7 @@
       .then((data) => {
         // console.log('price: ' + data.data.discounted_price);
         couponStatus = data.message;
-        // console.log('status: ' + couponStatus);
+        console.log('status: ' + couponStatus);
         if (couponStatus != 'inactive' || couponStatus != 'coupon not found' || couponStatus != null) {
           discountedPrice = data.data.discounted_price;
           discountPercentage = data.data.discount_percentage;
