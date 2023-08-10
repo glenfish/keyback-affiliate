@@ -63,6 +63,7 @@
       .then((data) => {
         // console.log('price: ' + data.data.discounted_price);
         couponStatus = data.message;
+        let discountPercentageRounded;
         console.log('status: ' + couponStatus);
         if (
           couponStatus !== 'inactive' &&
@@ -72,6 +73,7 @@
         ) {
           discountedPrice = data.data.discounted_price;
           discountPercentage = data.data.discount_percentage;
+          discountPercentageRounded = Math.round(discountPercentage);
           defaultPrice = data.data.default_price;
           discountedAmount = data.data.discount_amount;
         }
@@ -79,9 +81,9 @@
         retail2.textContent = defaultPrice;
         price1.textContent = discountedPrice;
         price2.textContent = discountedPrice;
-        discount1.textContent = discountPercentage;
-        discount1b.textContent = discountPercentage;
-        discount2.textContent = discountPercentage;
+        discount1.textContent = discountPercentageRounded;
+        discount1b.textContent = discountPercentageRounded;
+        discount2.textContent = discountPercentageRounded;
       })
 
       // .then(data => console.log(data))
