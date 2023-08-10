@@ -1,4 +1,4 @@
 /*
-  Content-Security-Policy: frame-ancestors https://service.chatlead.io/;
+  Content-Security-Policy: frame-src https://service.chatlead.io/;
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
