@@ -6,7 +6,7 @@
   var isAffiliate = false;
   var myMap;
   var retail1 = document.getElementById('retail-1');
-  var retail1 = document.getElementById('retail-2');
+  var retail2 = document.getElementById('retail-2');
   var price1 = document.getElementById('price-1');
   var price2 = document.getElementById('price-2');
   var discount1 = document.getElementById('percentage-discount-1');
@@ -25,9 +25,6 @@
     return myMap;
   }
 
-  
-  
-  
   function getClickID(params) {
     fetch(API_URL_CLICK + params, {
       method: 'GET',
@@ -38,12 +35,10 @@
       },
     })
       .then((response) => response.json())
-      .then(data => {
+      .then((data) => {
         clickID = data.data.id;
-        // console.log('CLICK ID: ' + data.data.id)
-      })
-      .then((data => {
         setCookie('click_id', clickID, 90);
+        // console.log('CLICK ID: ' + data.data.id)
       })
 
       // .then(data => console.log(data))
@@ -51,7 +46,6 @@
       .catch((error) => console.error(error));
   }
 
-  
   function getPricing(params) {
     fetch(API_URL_PRICING + params, {
       method: 'GET',
@@ -66,11 +60,11 @@
         // console.log('price: ' + data.data.discounted_price);
         couponStatus = data.status;
         couponMessage = data.message;
-        console.log('status: ' + couponStatus + '/nmessage: ' + couponMessage);
-        discountedPrice = data.data.discounted_price;
-        discountPercentage = data.data.discount_percentage;
-        defaultPrice = data.data.default_price;
-        discountedAmount = data.data.discount_amount
+        // console.log('status: ' + couponStatus + '/nmessage: ' + couponMessage);
+        let discountedPrice = data.data.discounted_price;
+        let discountPercentage = data.data.discount_percentage;
+        let defaultPrice = data.data.default_price;
+        let discountedAmount = data.data.discount_amount;
         retail1.textContent = defaultPrice;
         retail2.textContent = defaultPrice;
         price1.textContent = discountedPrice;
