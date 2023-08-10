@@ -65,9 +65,9 @@
         couponStatus = data.message;
         console.log('status: ' + couponStatus);
         if (
-          couponStatus !== 'inactive' ||
-          couponStatus !== 'coupon not found' ||
-          couponStatus !== 'expired' ||
+          couponStatus !== 'inactive' &&
+          couponStatus !== 'coupon not found' &&
+          couponStatus !== 'expired' &&
           couponStatus !== 'used'
         ) {
           discountedPrice = data.data.discounted_price;
