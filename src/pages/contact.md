@@ -6,17 +6,17 @@ layout: '~/layouts/MarkdownLayout.astro'
 Support Tickets:
 <a href="https://support.keyback.io/" target="_blank" class="text-yellow-200">https://support.keyback.io/</a>
 
-Marketing / Sales:
+Marketing / Sales:<br>
 <span class="text-yellow-200">sales<!-- dsadasd3asdasda -->@keyback<!-- dsadasd3asdasda -->.io</span>
 
-Business Development:
+Business Development:<br>
 <span class="text-yellow-200">bizdev<!-- dsadasdyasdasda -->@keyback<!-- dsadasd3asdasda -->.io</span>
 
-General Contact:
+General Contact:<br>
 <span class="text-yellow-200">admin<!-- dsad3asda -->@keyback<!-- dsadasd3asdasda -->.io</span>
 
 ---
 
-Keyback is an Eternal Digital Assets product
+Keyback is an <a href="https://eternaldigitalassets.com" target="_blank">Eternal Digital Assets product</a>
 
 8 The Green, Suite B, Dover DE 19901 USA
