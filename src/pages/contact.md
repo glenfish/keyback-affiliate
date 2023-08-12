@@ -17,6 +17,6 @@ General Contact:<br>
 
 ---
 
-Keyback is an <a href="https://eternaldigitalassets.com" target="_blank">Eternal Digital Assets</a>product
+Keyback is an <a href="https://eternaldigitalassets.com" target="_blank">Eternal Digital Assets </a>product
 
 8 The Green, Suite B, Dover DE 19901 USA
