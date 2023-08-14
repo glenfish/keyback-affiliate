@@ -4,6 +4,7 @@ import '~/assets/styles/stars.css';
 import MetaTags from '~/components/common/MetaTags.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 import Tapfiliate from '~/components/common/Tapfiliate.astro';
+import ClickMagick from '~/components/widgets/Clickmagick.astro';
 import TrackingCode from '~/components/common/TrackingCode.astro';
 import { MetaSEO } from '~/types';
 import { SITE } from '~/config.mjs';
@@ -27,6 +28,7 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
     <slot />
     <BasicScripts />
     <Tapfiliate />
+    <ClickMagick />
     <style is:global>
       img {
         content-visibility: auto;
