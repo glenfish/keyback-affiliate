@@ -4,7 +4,6 @@ import '~/assets/styles/stars.css';
 import MetaTags from '~/components/common/MetaTags.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 import Tapfiliate from '~/components/common/Tapfiliate.astro';
-import ClickMagick from '~/components/common/Clickmagick.astro';
 import TrackingCode from '~/components/common/TrackingCode.astro';
 import { MetaSEO } from '~/types';
 import { SITE } from '~/config.mjs';
@@ -20,15 +19,6 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
 <!DOCTYPE html>
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
-    <script>
-      window.clickmagick_cmc = {
-        uid: '173939',
-        hid: '1905123245',
-        cmc_project: 'Keyback-YT-1',
-        vid_info: 'on',
-      };
-    </script>
-    <script src="//cdn.clkmc.com/cmc.js"></script>
     <MetaTags {...meta} />
     <TrackingCode />
   </head>
