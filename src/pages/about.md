@@ -17,11 +17,5 @@ If you have any questions, comments, insights, bug reports, or musings, [contact
 
 We hope to welcome you to our Keyback family 😀
 
-<br>
-CEO<br>
-David Lister<br><br>
-Founder & CMO<br>
-Nic Fehlberg<br>
-<br>
-CTO<br>
-Xenomorfius<br>
+<br><br>
+Learn more at [Eternal Digital Assets](https://eternaldigitalassets.com)
