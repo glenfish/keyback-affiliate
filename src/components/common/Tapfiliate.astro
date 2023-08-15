@@ -6,7 +6,8 @@
   var newPricing = '';
   var isAffiliate = false;
   var myMap;
-  var refValue;
+  var refResult = '';
+  var refValue = '';
   var retail1 = document.getElementById('retail-1');
   var retail2 = document.getElementById('retail-2');
   var price1 = document.getElementById('price-1');
@@ -157,7 +158,7 @@
         {}
       );
     // console.log(t);
-    var refResult = '';
+
     const referringURL = window.location.href;
     if (referringURL.includes('specials.keyback.io/go/')) {
       refResult = referringURL.replace('https://specials.keyback.io/go/', '');
@@ -180,7 +181,7 @@
     if (isAffiliate) {
       getClickID(urlParams);
       getPricing(refResult);
-    } else if (refValue != '') {
+    } else if ((refValue != '' && refValue != refResult) || (refValue != '' && refResult == '')) {
       getPricingFromCookies();
     } else {
       updateBTCDiscount();
