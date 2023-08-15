@@ -84,7 +84,10 @@
           discountPercentageRounded = Math.round(discountPercentage);
           defaultPrice = data.data.default_price;
           discountedAmount = data.data.discount_amount;
-          btcDiscountAmount = data.data.btc_discount_amount;
+          if (data.data.btc_discount_amount != '0' || data.data.btc_discount_amount != null) {
+            btcDiscountAmount = data.data.btc_discount_amount;
+          }
+
           btcDiscountedPrice = data.data.btc_discounted_price;
         }
         retail1.textContent = defaultPrice;
