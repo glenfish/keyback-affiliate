@@ -173,15 +173,15 @@
       setCookie('ref', refResult, 90);
       isAffiliate = true;
     }
-    refValue = getCookie('ref');
 
     urlParams += 'referrer=' + encodeURIComponent(document.referrer) + '&';
     urlParams += 'landing_page=' + encodeURIComponent(landingPage);
-
+    refValue = getCookie('ref');
     if (isAffiliate) {
       getClickID(urlParams);
       getPricing(refResult);
     } else if (refValue != '') {
+      console.log('getting values from cookies');
       getPricingFromCookies();
     } else {
       updateBTCDiscount();
