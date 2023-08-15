@@ -2,6 +2,7 @@
   const API_URL_CLICK = 'https://app.keyback.io/api/tapfiliate/click-id?';
   const API_URL_PRICING = 'https://app.keyback.io/api/coupons/discount-by-ref/';
   var clickID = '';
+  var noBTCDiscount = false;
   var newPricing = '';
   var isAffiliate = false;
   var myMap;
@@ -28,7 +29,12 @@
     let s = 'expires=' + n.toUTCString();
     document.cookie = e + '=' + t + ';' + s + ';path=/' + ';domain=.keyback.io' + ';Samesite=Lax';
   }
-
+  function updateBTCDiscount() {
+    document.getElementById('bitcoin-discount-active').classList.add('hidden');
+    document.getElementById('bitcoin-discount-inactive').classList.remove('hidden');
+    document.getElementById('bitcoin-discount-active-2').classList.add('hidden');
+    document.getElementById('bitcoin-discount-inactive-2').classList.remove('hidden');
+  }
   function convert(json) {
     myMap = new Map(Object.entries(JSON.parse(json)));
     return myMap;
@@ -92,6 +98,10 @@
         discount2.textContent = discountPercentageRounded;
         btcDiscountPercentage1.textContent = Math.round(btcDiscountAmount);
         btcDiscountPercentage2.textContent = Math.round(btcDiscountAmount);
+        if (Math.round(btcDiscountAmount) == 0) {
+          noBTCDiscount = true;
+          updateBTCDiscount();
+        }
       })
 
       // .then(data => console.log(data))
