@@ -106,6 +106,12 @@
         } else {
           updateBTCDiscount();
         }
+        setCookie('default_price', defaultPrice, 90);
+        setCookie('discount_amount', discountedAmount, 90);
+        setCookie('discount_percentage', discountPercentage, 90);
+        setCookie('discounted_price', discountedPrice, 90);
+        setCookie('btc_discount_amount', btcDiscountAmount, 90);
+        setCookie('btc_discounted_price', btcDiscountedPrice, 90);
       })
 
       // .then(data => console.log(data))
