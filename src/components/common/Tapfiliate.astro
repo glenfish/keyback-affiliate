@@ -55,6 +55,22 @@
     discountPercentage = getCookie('discount_percentage');
     btcDiscountAmount = getCookie('btc_discount_amount');
     btcDiscountedPrice = getCookie('btc_discounted_price');
+    retail1.textContent = defaultPrice;
+    retail2.textContent = defaultPrice;
+    price1.textContent = discountedPrice;
+    price2.textContent = discountedPrice;
+    discount1.textContent = discountPercentageRounded;
+    discount1b.textContent = discountPercentageRounded;
+    discount2.textContent = discountPercentageRounded;
+    btcDiscountPercentage1.textContent = Math.round(btcDiscountAmount);
+    btcDiscountPercentage2.textContent = Math.round(btcDiscountAmount);
+    btcDiscountedDollarAmount.textContent = Math.round(btcDiscountedPrice);
+    if (Math.round(btcDiscountAmount) == 0) {
+      noBTCDiscount = true;
+      updateBTCDiscountNone();
+    } else {
+      updateBTCDiscount();
+    }
   }
   function updateBTCDiscountNone() {
     document.getElementById('bitcoin-discount-inactive').classList.remove('hidden');
