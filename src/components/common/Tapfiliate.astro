@@ -181,7 +181,7 @@
     if (isAffiliate) {
       getClickID(urlParams);
       getPricing(refResult);
-    } else if ((refValue != '' && refValue != refResult) || (refValue != '' && refResult == '')) {
+    } else if (refValue != '') {
       getPricingFromCookies();
     } else {
       updateBTCDiscount();
