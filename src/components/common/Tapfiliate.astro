@@ -21,7 +21,7 @@
   var defaultPrice = '1988';
   var discountedAmount = '1491';
   var btcDiscountAmount = '10';
-  var btcDiscountedPrice = '897';
+  var btcDiscountedPrice = '897.30';
   var couponStatus = '';
   function setCookie(e, t, o) {
     const n = new Date();
@@ -101,6 +101,9 @@
         if (Math.round(btcDiscountAmount) == 0) {
           noBTCDiscount = true;
           updateBTCDiscount();
+        }
+        if (btcDiscountedPrice != '897.3') {
+          document.getElementByID('btc-amount-discount-1').textContent = btcDiscountedPrice;
         }
       })
 
