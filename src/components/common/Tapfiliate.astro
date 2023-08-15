@@ -6,6 +6,7 @@
   var newPricing = '';
   var isAffiliate = false;
   var myMap;
+  var refValue;
   var retail1 = document.getElementById('retail-1');
   var retail2 = document.getElementById('retail-2');
   var price1 = document.getElementById('price-1');
@@ -24,11 +25,35 @@
   var btcDiscountAmount = '10';
   var btcDiscountedPrice = '897.30';
   var couponStatus = '';
+
   function setCookie(e, t, o) {
     const n = new Date();
     n.setTime(n.getTime() + 24 * o * 60 * 60 * 1e3);
     let s = 'expires=' + n.toUTCString();
     document.cookie = e + '=' + t + ';' + s + ';path=/' + ';domain=.keyback.io' + ';Samesite=Lax';
+  }
+  function getCookie(cname) {
+    let name = cname + '=';
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return '';
+  }
+  function getPricingFromCookies() {
+    defaultPrice = getCookie(default_price);
+    discountedAmount = getCookie(discount_amount);
+    discountedPrice = getCookie(discounted_price);
+    discountPercentage = getCookie(discount_percentage);
+    btcDiscountAmount = getCookie(btc_discount_amount);
+    btcDiscountedPrice = getCookie(btc_discounted_price);
   }
   function updateBTCDiscountNone() {
     document.getElementById('bitcoin-discount-inactive').classList.remove('hidden');
@@ -147,6 +172,7 @@
       setCookie('ref', refResult, 90);
       isAffiliate = true;
     }
+    refValue = getCookie('ref');
 
     urlParams += 'referrer=' + encodeURIComponent(document.referrer) + '&';
     urlParams += 'landing_page=' + encodeURIComponent(landingPage);
@@ -154,6 +180,8 @@
     if (isAffiliate) {
       getClickID(urlParams);
       getPricing(refResult);
+    } else if (refValue != '') {
+      getPricingFromCookies();
     } else {
       updateBTCDiscount();
     }
