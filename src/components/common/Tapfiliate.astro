@@ -17,6 +17,8 @@
   var discountPercentageRounded = '50';
   var defaultPrice = '1988';
   var discountedAmount = '1491';
+  var btcDiscountAmount = '10';
+  var btcDiscountedPrice = '897';
   var couponStatus = '';
   function setCookie(e, t, o) {
     const n = new Date();
@@ -76,6 +78,8 @@
           discountPercentageRounded = Math.round(discountPercentage);
           defaultPrice = data.data.default_price;
           discountedAmount = data.data.discount_amount;
+          btcDiscountAmount = data.data.btc_discount_amount;
+          btcDiscountedPrice = data.data.btc_discounted_price;
         }
         retail1.textContent = defaultPrice;
         retail2.textContent = defaultPrice;

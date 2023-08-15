@@ -270,7 +270,7 @@ const {
         class="px-6 py-8 text-center bg-gray-200 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-10 xl:p-40 dark:bg-[url('/images/pattern-bgnd-3.jpg')]"
         id="pricing-rhs"
       >
-        <span class="text-lg font-bold leading-6 text-gray-900 dark:text-white lg:pb-0">
+        <span class="text-lg font-bold leading-6 text-gray-900 dark:text-gray-300 lg:pb-0">
           RRP $<span id="retail-1">1988</span></span
         ><br class="sm:hidden md:inline" /><span
           class="dark:text-burntorange text-burntorange lg:text-3xl md:text-2xl sm:text-xl text-xl"
@@ -278,11 +278,17 @@ const {
         >
 
         <h2
-          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-7xl min-[1536px]:text-7xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-800 text-lcenter my-4"
+          class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-7xl min-[1536px]:text-7xl font-bold leading-tighter tracking-tighter dark:mb-2 font-heading dark:text-gray-200 text-gray-800 text-lcenter mt-4"
         >
           <span class="text-xl pr-0 relative -top-8 text-gray-800 dark:text-white"> $</span><span id="price-1">997</span
           >
         </h2>
+        <!-- <p class="mt-0 text-sm leading-5">
+          <span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl">
+            Pay With&nbsp;
+            {callToAction2.icon && <Icon name={callToAction2.icon} class="w-7 h-7 inline" title="Credit/Debit Card" />}
+          </span>
+        </p> -->
 
         <div class="mt-6">
           <div class="rounded-md">
@@ -295,19 +301,44 @@ const {
               {callToAction.icon && <Icon name={callToAction.icon} class="w-5 h-5 mr-1 -ml-1.5" />}
               {callToAction.text}
             </a>
-            <p class="mt-10 text-sm leading-5">
-              <span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl">
-                Pay with&nbsp;
-                {
-                  callToAction2.icon && (
-                    <Icon name={callToAction2.icon} class="w-7 h-7 inline" title="Credit/Debit Card" />
-                  )
-                }
-              </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl"
-                >&nbsp;or
-                {callToAction3.icon && <Icon name={callToAction3.icon} class="w-7 h-7 inline" title="Bitcoin" />}
-              </span>
-            </p>
+            <div id="bitcoin-discount-active">
+              <p class="mt-10 text-sm leading-5">
+                <span class="inline font-medium dark:text-white text-white text-xl"
+                  >Or Pay With
+                  {
+                    callToAction3.icon && (
+                      <Icon name={callToAction3.icon} class="w-7 h-7 inline relative -top-0.5" title="Bitcoin" />
+                    )
+                  }
+                </span><br />
+                <span class="inline font-medium dark:text-burntorange text-burntorange text-xl"
+                  >and get <span id="btc-percentage-discount">10</span>% extra off!
+                </span>
+              </p>
+            </div>
+            <!-- end bitcoin-discount-active -->
+            <div id="bitcoin-discount-inactive" class="hidden">
+              <p class="mt-0 text-sm leading-5">
+                <span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl">
+                  Pay With&nbsp;
+                  {
+                    callToAction2.icon && (
+                      <Icon name={callToAction2.icon} class="w-7 h-7 inline" title="Credit/Debit Card" />
+                    )
+                  }
+                </span>
+
+                <span class="inline font-medium dark:text-white text-white text-xl"
+                  >or
+                  {
+                    callToAction3.icon && (
+                      <Icon name={callToAction3.icon} class="w-7 h-7 inline relative -top-0.5" title="Bitcoin" />
+                    )
+                  }
+                </span>
+              </p>
+            </div>
+            <!-- end bitcoin-discount-inactive -->
           </div>
         </div>
       </div>

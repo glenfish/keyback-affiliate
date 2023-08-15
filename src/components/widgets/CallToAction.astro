@@ -44,14 +44,14 @@ const {
           class="px-6 pt-5 text-center lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-10 xl:p-3"
           id="pricing-rhs"
         >
-          <span class="text-xl font-bold leading-6 text-gray-900 dark:text-white pt-4 lg:pb-0">
+          <span class="text-xl font-bold leading-6 text-gray-900 dark:text-gray-300 pt-4 lg:pb-0">
             RRP $<span id="retail-2">1988</span></span
           ><br class="inline" /><span class="dark:text-burntorange text-burntorange lg:text-3xl md:text-2xl sm:text-3xl"
             >NOW <span id="percentage-discount-2">50</span>% OFF!</span
           >
 
           <h2
-            class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-7xl min-[1536px]:text-7xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-gray-200 text-gray-800 text-lcenter my-4"
+            class="text-4xl min-[1400px]:text-[90px] max-[1535px]:text-7xl min-[1536px]:text-7xl font-bold leading-tighter tracking-tighter dark:mb-1 font-heading dark:text-gray-200 text-gray-800 text-lcenter mt-4"
           >
             <span class="text-xl pr-0 relative -top-8 text-gray-800 dark:text-white"> $</span><span id="price-2"
               >997</span
@@ -74,13 +74,18 @@ const {
             )
           )
         }
+
         <p class="mt-10 text-sm leading-5">
-          <span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl">
-            Pay with&nbsp;
-            {callToAction2.icon && <Icon name={callToAction2.icon} class="w-7 h-7 inline" title="Credit/Debit Card" />}
-          </span><span class="inline font-medium text-gray-500 dark:text-gray-400 text-xl"
-            >&nbsp;or
-            {callToAction3.icon && <Icon name={callToAction3.icon} class="w-7 h-7 inline" title="Bitcoin" />}
+          <span class="inline font-medium dark:text-white text-white text-xl"
+            >Or Pay With
+            {
+              callToAction3.icon && (
+                <Icon name={callToAction3.icon} class="w-7 h-7 inline relative -top-0.5" title="Bitcoin" />
+              )
+            }
+          </span><br />
+          <span class="inline font-medium dark:text-burntorange text-burntorange text-xl"
+            >and get <span id="btc-percentage-discount">10</span>% extra off!
           </span>
         </p>
       </div>
