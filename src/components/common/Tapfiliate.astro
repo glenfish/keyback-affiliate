@@ -48,12 +48,12 @@
     return '';
   }
   function getPricingFromCookies() {
-    defaultPrice = getCookie(default_price);
-    discountedAmount = getCookie(discount_amount);
-    discountedPrice = getCookie(discounted_price);
-    discountPercentage = getCookie(discount_percentage);
-    btcDiscountAmount = getCookie(btc_discount_amount);
-    btcDiscountedPrice = getCookie(btc_discounted_price);
+    defaultPrice = getCookie('default_price');
+    discountedAmount = getCookie('discount_amount');
+    discountedPrice = getCookie('discounted_price');
+    discountPercentage = getCookie('discount_percentage');
+    btcDiscountAmount = getCookie('btc_discount_amount');
+    btcDiscountedPrice = getCookie('btc_discounted_price');
   }
   function updateBTCDiscountNone() {
     document.getElementById('bitcoin-discount-inactive').classList.remove('hidden');
