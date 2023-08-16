@@ -63,7 +63,7 @@
       deleteCookie('discount_percentage');
       deleteCookie('btc_discount_amount');
       deleteCookie('btc_discounted_price');
-      if (isAffiliate) {
+      if (getCookie('ref') != '') {
         getPricing(getCookie('ref'));
       } else {
         console.log('refresh');
