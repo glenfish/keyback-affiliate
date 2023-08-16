@@ -83,7 +83,8 @@
     }
   }
   function deleteCookie(cookieName) {
-    document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie =
+      cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/' + ';domain=.keyback.io' + ';Samesite=Lax';
   }
   function updateBTCDiscountNone() {
     document.getElementById('bitcoin-discount-inactive').classList.remove('hidden');
