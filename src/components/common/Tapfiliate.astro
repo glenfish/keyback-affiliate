@@ -220,6 +220,12 @@
       getPricingFromCookies();
     } else {
       updateBTCDiscount();
+      deleteCookie('default_price');
+      deleteCookie('discount_amount');
+      deleteCookie('discounted_price');
+      deleteCookie('discount_percentage');
+      deleteCookie('btc_discount_amount');
+      deleteCookie('btc_discounted_price');
     }
   });
 </script>
