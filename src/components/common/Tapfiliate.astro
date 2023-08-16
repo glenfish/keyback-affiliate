@@ -56,12 +56,14 @@
     btcDiscountAmount = getCookie('btc_discount_amount');
     btcDiscountedPrice = getCookie('btc_discounted_price');
     if (!discountedPrice || discountedPrice == '' || !discountPercentage || discountPercentage == '') {
+      console.log('some pricing data missing');
       deleteCookie('defaultPrice');
       deleteCookie('discountedAmount');
       deleteCookie('discountedPrice');
       deleteCookie('discountPercentage');
       deleteCookie('btcDiscountAmount');
       deleteCookie('btcDiscountedPrice');
+      location.reload();
     }
     retail1.textContent = defaultPrice;
     retail2.textContent = defaultPrice;
