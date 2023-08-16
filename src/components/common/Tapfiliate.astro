@@ -56,7 +56,7 @@
     btcDiscountAmount = getCookie('btc_discount_amount');
     btcDiscountedPrice = getCookie('btc_discounted_price');
     if (!discountedPrice || discountedPrice == '' || !discountPercentage || discountPercentage == '') {
-      console.log('some pricing data missing');
+      // console.log('some pricing data missing');
       deleteCookie('default_price');
       deleteCookie('discount_amount');
       deleteCookie('discounted_price');
@@ -150,6 +150,14 @@
           }
 
           btcDiscountedPrice = data.data.btc_discounted_price;
+        } else {
+          discountedPrice = '997';
+          discountPercentage = '50';
+          discountPercentageRounded = '50';
+          defaultPrice = '1988';
+          discountedAmount = '1491';
+          btcDiscountAmount = '10';
+          btcDiscountedPrice = '897.30';
         }
         retail1.textContent = defaultPrice;
         retail2.textContent = defaultPrice;
