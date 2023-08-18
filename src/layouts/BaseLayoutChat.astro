@@ -21,6 +21,13 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
 <html lang={language} dir={textDirection} class="2xl:text-[20px] dark">
   <head>
     <MetaTags {...meta} />
+    <script is:inline>
+      window.chatbaseConfig = {
+        chatbotId: 'uzZU5awbXtYQv2xpYe8Zd',
+      };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" id="uzZU5awbXtYQv2xpYe8Zd" defer></script>
+
     <TrackingCode />
   </head>
 
