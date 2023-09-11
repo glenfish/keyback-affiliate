@@ -1,0 +1,291 @@
+---
+import { Icon } from 'astro-icon';
+
+interface CallToAction {
+  text: string;
+  href: string;
+  icon?: string;
+}
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  callToAction?: string | CallToAction;
+  callToAction2?: string | CallToAction;
+  callToAction3?: string | CallToAction;
+  image?: string | any; // TODO: find HTMLElementProps
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  content = await Astro.slots.render('content'),
+  callToAction = await Astro.slots.render('callToAction'),
+  callToAction2 = await Astro.slots.render('callToAction2'),
+  callToAction3 = await Astro.slots.render('callToAction2'),
+  image = await Astro.slots.render('image'),
+} = Astro.props;
+---
+
+<span id="pricing" style="position:relative; top:0px;"></span>
+<section class="dark:bg-gray-800 bg-gray-100">
+  <div class="relative max-w-screen-2xl px-4 mx-auto sm:px-6 lg:px-8 py-20">
+    <div
+      class="max-w-3xl mx-auto overflow-hidden rounded-[20px] shadow-lg pricing-box lg:max-w-none lg:flex border-0 border-white dark:border-0 dark:border-gray-900"
+    >
+      <div class="px-6 py-8 bg-white dark:bg-gray-900 lg:flex-shrink-1 lg:p-12">
+        <h2
+          class="text-4xl min-[1400px]:text-[70px] max-[1535px]:text-5xl min-[1536px]:text-6xl font-bold leading-tighter tracking-tighter dark:mb-8 font-heading dark:text-white text-gray-700 text-left mb-8 xl:mt-10 lg:mt-5"
+        >
+          Lifetime Deal
+        </h2>
+        <p class="mt-6 text-xl leading-6 text-gray-600 dark:text-gray-300">
+          As a lifetime member, you get:<br /><br />
+          1. &nbsp;Your own personal automated Deadman Switch to pass your digital assets to your heirs/beneficiaries if
+          (and only if) you pass away. (Awesome, that's your family taken care of!)<br /><br />
+          2. &nbsp;A permanent, powerful, decentralized backup and recovery for your digital assets while you're alive. Never
+          lose access to your wallets ever again. (It's a digital 'Fort Knox' for your crypto wealth)<br /><br />
+          Limited Lifetime Deal: <span class="underline">Get <span id="percentage-discount-1b">50</span>% off!</span>
+          <br />All upgrades and new planned features <span class="underline">FREE for life</span>
+        </p>
+        <div class="mt-8">
+          <div class="flex items-center">
+            <h4
+              class="flex-shrink-0 pr-4 text-md font-semibold leading-5 tracking-wider text-gray-500 dark:text-gray-200 uppercase bg-gray-100 dark:bg-gray-800 pl-5"
+            >
+              What&#x27;s included
+            </h4>
+            <div class="flex-1 border-t-2 dark:border-gray-600 border-gray-200"></div>
+          </div>
+          <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  stroke="currentColor"
+                  fill="#FF5E0E"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Encrypter / Decrypter</p>
+            </li>
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  stroke="currentColor"
+                  fill="#FF5E0E"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Deadman Switch</p>
+            </li>
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  stroke="currentColor"
+                  fill="#FF5E0E"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Private Vault Storage</p>
+            </li>
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  stroke="currentColor"
+                  fill="#FF5E0E"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Walkthrough screen capture videos</p>
+            </li>
+
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  stroke="currentColor"
+                  fill="#FF5E0E"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Community & Support</p>
+            </li>
+
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  stroke="currentColor"
+                  fill="#FF5E0E"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 mb-5 text-md leading-5 text-gray-700 dark:text-gray-200">Free Updates for Life</p>
+            </li>
+          </ul>
+        </div>
+        <a href="./#videos" class="text-burntorange text-sm">Check Out The Videos To Learn More</a>
+        <div class="mt-8">
+          <div class="flex items-center">
+            <h4
+              class="flex-shrink-0 pr-4 text-md font-semibold leading-5 tracking-wider text-gray-500 dark:text-gray-200 uppercase bg-gray-100 dark:bg-gray-800 pl-5"
+            >
+              What&#x27;s not included
+            </h4>
+            <div class="flex-1 border-t-2 dark:border-gray-600 border-gray-200"></div>
+          </div>
+          <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  class="w-6 h-6 mr-2"
+                  fill="red"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Zero Risk. Encrypt offline.</p>
+            </li>
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  class="w-6 h-6 mr-2"
+                  fill="red"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 mr-1 text-md leading-5 text-gray-700 dark:text-gray-200">No surprise fees or gotchas</p>
+            </li>
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  class="w-6 h-6 mr-2"
+                  fill="red"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">Nothing complex to learn</p>
+            </li>
+            <li class="flex items-start lg:col-span-1 py-2">
+              <div class="flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  class="w-6 h-6 mr-2"
+                  fill="red"
+                  viewBox="0 0 1792 1792"
+                >
+                  <path
+                    d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <p class="ml-3 text-md leading-5 text-gray-700 dark:text-gray-200">
+                We don't store or access your cryptos
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="px-6 py-8 text-center bg-gray-200 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-10 xl:p-40 dark:bg-[url('/images/pattern-bgnd-3.jpg')]"
+        id="pricing-rhs"
+      >
+        <div class="mt-6">
+          <div class="rounded-md">
+            <a
+              class="btn btn-primary w-full sm:w-auto"
+              href="https://clients.keyback.io/registration"
+              target="_blank"
+              rel="noopener"
+            >
+              {callToAction.icon && <Icon name={callToAction.icon} class="w-5 h-5 mr-1 -ml-1.5" />}
+              {callToAction.text}
+            </a>
+            <div id="bitcoin-discount-active" class="hidden"></div>
+            <!-- end bitcoin-discount-active -->
+            <div id="bitcoin-discount-inactive" class="hidden"></div>
+            <!-- end bitcoin-discount-inactive -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
