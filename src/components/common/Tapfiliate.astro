@@ -15,6 +15,7 @@
   var discount1 = document.getElementById('percentage-discount-1');
   var discount1b = document.getElementById('percentage-discount-1b');
   var discount2 = document.getElementById('percentage-discount-2');
+  var discount3 = document.getElementById('percentage-discount-3');
   var btcDiscountPercentage1 = document.getElementById('btc-percentage-discount-1');
   var btcDiscountPercentage2 = document.getElementById('btc-percentage-discount-2');
   var btcDiscountedDollarAmount = document.getElementById('btc-amount-discount-1');
@@ -77,6 +78,7 @@
     discount1.textContent = discountPercentageRounded;
     discount1b.textContent = discountPercentageRounded;
     discount2.textContent = discountPercentageRounded;
+    discount3.textContent = discountPercentageRounded;
     btcDiscountPercentage1.textContent = Math.round(btcDiscountAmount);
     btcDiscountPercentage2.textContent = Math.round(btcDiscountAmount);
     btcDiscountedDollarAmount.textContent = Math.round(btcDiscountedPrice);
@@ -166,6 +168,7 @@
         discount1.textContent = discountPercentageRounded;
         discount1b.textContent = discountPercentageRounded;
         discount2.textContent = discountPercentageRounded;
+        discount3.textContent = discountPercentageRounded;
         btcDiscountPercentage1.textContent = Math.round(btcDiscountAmount);
         btcDiscountPercentage2.textContent = Math.round(btcDiscountAmount);
         btcDiscountedDollarAmount.textContent = Math.round(btcDiscountedPrice);

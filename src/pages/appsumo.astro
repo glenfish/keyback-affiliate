@@ -1,0 +1,194 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayoutAppsumo.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Hero from '~/components/widgets/Hero3.astro';
+import Media from '~/components/widgets/Media.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+import Plans from '~/components/widgets/Plans.astro';
+import HowItWorks from '~/components/widgets/HowItWorks.astro';
+import Explainer from '~/components/widgets/Explainer.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Videos from '~/components/widgets/Videos.astro';
+import TwoinOne from '~/components/widgets/TwoinOne.astro';
+import InTheNews from '~/components/widgets/InTheNews.astro';
+import Seeds from '~/components/widgets/Seeds.astro';
+import Content from '~/components/widgets/Content.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+import FAQs from '~/components/widgets/FAQ.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Tapfiliate from '~/components/common/Tapfiliate.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <anchor id="top" class="scroll-mt-20"></anchor>
+  <Hero
+    callToAction={{
+      text: 'Watch Videos',
+      href: '#videos',
+      icon: 'tabler:movie',
+    }}
+    callToAction2={{ text: 'How It Works', href: '#how-it-works-section' }}
+    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      <span class="text-white dark:text-white" style="position:relative; left: 6px;"
+        >Protect Your<br />Crypto Against</span
+      >
+
+      <section class="animation-container" id="hero-subtitle-1">
+        <span class="animation-headline slide">
+          <span class="animation-words-wrapper text-accent dark:text-[#FF5E0E] text-[#FF5E0E] highlight mt-4">
+            <b class="is-visible text-8xl px-2 tracking-tight text-[#FF5E0E]">FIRE</b>
+            <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">FLOOD</b>
+            <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">THEFT</b>
+            <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">LOSS</b>
+            <b id="fatal-spacewalks" class="taller text-[77px] tracking-tight text-[#FF5E0E]">FATAL SPACEWALKS</b>
+          </span>
+        </span>
+      </section>
+
+      <section class="animation-container" id="hero-subtitle-2">
+        <span class="animation-headline slide">
+          <span class="animation-words-wrapper text-accent dark:text-[#FF5E0E] text-[#FF5E0E] highlight mt-4">
+            <b class="is-visible text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">FIRE</b>
+            <b class="text-6xl mb-2 px-2 tracking-tight text-[#FF5E0E]">FLOOD</b>
+            <b class="text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">THEFT</b>
+            <b class="text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">LOSS</b>
+            <b id="fatal-spacewalks-2" class="shakeit tall text-[37px] px-2 tracking-tight text-[#FF5E0E]"
+              >FATAL<br />SPACEWALKS</b
+            >
+          </span>
+        </span>
+      </section>
+
+      <!-- <span
+        id="hero-subtitle-2"
+        class="text-accent lg:text-5xl md:text-5xl text-4xl dark:text-[#FF5E0E] text-[#FF5E0E] highlight"
+        id="thetitle"
+      >
+        FIRE. FLOOD. THEFT. LOSS.<br />FATAL SPACEWALKS.</span
+      > -->
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div id="hero-subtitle">
+        <span class="sm:inline text-white/90">
+          <span class="font-bold"></span>Dave went for a spacewalk. His family didn't have his crypto details. No
+          logins, seed phrases or private keys. Luckily, his cryptocurrency was not lost! Dave's <span
+            class="text-[#FF5E0E]">Deadman Switch</span
+          > protected his cryptos when he was alive and passed them on automatically to loved ones after his death. Dave's
+          family are wealthy because he used Keyback.</span
+        >
+      </div>
+    </Fragment>
+  </Hero>
+  <Media />
+  <!-- <HowItWorks /> -->
+  <div class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
+    <TwoinOne />
+    <Videos />
+    <Pricing
+      callToAction={{
+        text: 'Join Keyback',
+        href: 'https://clients.keyback.io/registration',
+        icon: 'tabler:basket',
+      }}
+      callToAction2={{
+        text: 'Credit Card',
+        href: '',
+        icon: 'tabler:credit-card',
+      }}
+      callToAction3={{
+        text: 'Bitcoin',
+        href: '',
+        icon: 'tabler:currency-bitcoin',
+      }}
+    >
+      <Fragment slot="title">
+        Get Crypto Secure.<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Keyback.</span>
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        Built for digital asset traders and investors.<br class="hidden md:inline" />Don't be the guy who lost his
+        crypto!
+      </Fragment>
+    </Pricing>
+
+    <Seeds />
+    <InTheNews />
+
+    <Content
+      highlight="Legal Wills & Trusts"
+      title="The Perfect Addition"
+      items={[
+        {
+          title: 'Your Will & Keyback',
+          description:
+            'You can store your optional MasterKey in your Will. This will be the final password that unlocks your crypto wallets to your Heirs/Beneficiaries.',
+        },
+        {
+          title: 'Fly Under The Radar',
+          description:
+            'Using Keyback, you dont invite scrutiny and you can control exactly what happens without trusting any third parties with your information or even the knowledge that you have cryptos to begin with.',
+        },
+      ]}
+      image={{
+        src: import('~/assets/images/gavel.jpg'),
+        alt: 'Colorful Image',
+      }}
+    >
+      <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Does it replace a Will?</h3>
+        No, it is for passing on digital assets only. For example crypto exchange logins, private keys, hardware and software
+        wallet backup seeds, 2FA backup codes etc. And importantly, specific instructions to your Beneficiaries on how to
+        access web-based wallets and other third party services, NFTs... this list goes on. A Legal Will & Testament exposes
+        your details to legal professionals and in many cases the courts and the public. They are not equipt to deal with
+        sensitive digital information. Keyback is a service that works perfectly alongside a traditional Legal Will & Testament.
+      </Fragment>
+    </Content>
+    <HowItWorks
+      callToAction={{
+        text: 'show',
+        href: '#',
+        icon: 'tabler:caret-down',
+      }}
+    />
+
+    <FAQs />
+    <!-- <Testimonials /> -->
+    <CallToAction
+      callToAction={{
+        text: 'Join Keyback',
+        href: 'https://clients.keyback.io/registration',
+        icon: 'tabler:basket',
+      }}
+      callToAction2={{
+        text: 'Credit Card',
+        href: '',
+        icon: 'tabler:credit-card',
+      }}
+      callToAction3={{
+        text: 'Bitcoin',
+        href: '',
+        icon: 'tabler:currency-bitcoin',
+      }}
+    >
+      <Fragment slot="title">Secure Your Crypto Future</Fragment>
+
+      <Fragment slot="subtitle">
+        Built for digital asset traders and investors. Get Yours.<br class="hidden md:inline" />
+      </Fragment>
+    </CallToAction>
+  </div>
+  <Tapfiliate />
+</Layout>
