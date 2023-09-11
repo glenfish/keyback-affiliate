@@ -20,6 +20,7 @@
       // console.log('Code: ' + refResult);
     }
     if (refResult != '') {
+      console.log('Code received: ' + refResult);
       setCookie('code', refResult, 90);
       deleteCookie('default_price');
       deleteCookie('discount_amount');
