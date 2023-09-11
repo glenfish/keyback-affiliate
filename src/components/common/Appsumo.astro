@@ -1,5 +1,5 @@
 <script is:inline>
-  console.log('Appsumo JS loaded');
+  // console.log('Appsumo JS loaded');
   var refResult = '';
 
   function setCookie(e, t, o) {
@@ -15,14 +15,12 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    const referringURL = window.location.href;
-    if (referringURL.includes('specials.keyback.io/a/')) {
-      refResult = referringURL.replace('https://specials.keyback.io/a/', '');
-      // console.log('Code: ' + refResult);
-    }
-    if (refResult != '') {
-      console.log('Code received: ' + refResult);
-      setCookie('code', refResult, 90);
+    const urlParams = new URLSearchParams(window.location.search);
+    const codeVal = urlParams.get('code');
+
+    if (codeVal != '') {
+      console.log('Code received: ' + codeVal);
+      setCookie('code', codeVal, 90);
       deleteCookie('default_price');
       deleteCookie('discount_amount');
       deleteCookie('discounted_price');
