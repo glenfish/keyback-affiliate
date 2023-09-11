@@ -19,8 +19,8 @@
     const codeVal = urlParams.get('code');
 
     if (codeVal != '') {
-      console.log('Code received: ' + codeVal);
-      setCookie('code', codeVal, 90);
+      // console.log('Code received: ' + codeVal);
+      setCookie('coupon', codeVal, 90);
       deleteCookie('default_price');
       deleteCookie('discount_amount');
       deleteCookie('discounted_price');
