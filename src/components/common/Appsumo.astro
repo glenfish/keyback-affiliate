@@ -1,0 +1,38 @@
+<script is:inline>
+  var refResult = '';
+
+  function setCookie(e, t, o) {
+    const n = new Date();
+    n.setTime(n.getTime() + 24 * o * 60 * 60 * 1e3);
+    let s = 'expires=' + n.toUTCString();
+    document.cookie = e + '=' + t + ';' + s + ';path=/' + ';domain=.keyback.io' + ';Samesite=Lax';
+  }
+
+  function deleteCookie(cookieName) {
+    document.cookie =
+      cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/' + ';domain=.keyback.io' + ';Samesite=Lax';
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const referringURL = window.location.href;
+    if (referringURL.includes('specials.keyback.io/go/appsumo/')) {
+      refResult = referringURL.replace('https://specials.keyback.io/go/appsumo/', '');
+      // console.log('Code: ' + refResult);
+    }
+    if (referringURL.includes('specials.keyback.io/pro/')) {
+      refResult = referringURL.replace('https://specials.keyback.io/pro/appsumo/', '');
+      // console.log('Pro Code: ' + refResult);
+    }
+    if (refResult != '') {
+      setCookie('code', refResult, 90);
+      deleteCookie('default_price');
+      deleteCookie('discount_amount');
+      deleteCookie('discounted_price');
+      deleteCookie('discount_percentage');
+      deleteCookie('btc_discount_amount');
+      deleteCookie('btc_discounted_price');
+      deleteCookie('click_id');
+      deleteCookie('ref');
+    }
+  });
+</script>
