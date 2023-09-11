@@ -15,13 +15,9 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     const referringURL = window.location.href;
-    if (referringURL.includes('specials.keyback.io/go/appsumo/')) {
-      refResult = referringURL.replace('https://specials.keyback.io/go/appsumo/', '');
+    if (referringURL.includes('appsumo.keyback.io/a/')) {
+      refResult = referringURL.replace('https://appsumo.keyback.io/a/', '');
       // console.log('Code: ' + refResult);
-    }
-    if (referringURL.includes('specials.keyback.io/pro/')) {
-      refResult = referringURL.replace('https://specials.keyback.io/pro/appsumo/', '');
-      // console.log('Pro Code: ' + refResult);
     }
     if (refResult != '') {
       setCookie('code', refResult, 90);
