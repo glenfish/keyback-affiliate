@@ -21,7 +21,7 @@ import FAQs from '~/components/widgets/FAQ.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Tapfiliate from '~/components/common/Tapfiliate.astro';
-
+import CantHelpYouDave from '~/components/widgets/CantHelpYouDave.astro';
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -31,67 +31,70 @@ const meta = {
 
 <Layout {meta}>
   <anchor id="top" class="scroll-mt-20"></anchor>
-  <Hero
-    callToAction={{
-      text: 'Watch Videos',
-      href: '#videos',
-      icon: 'tabler:movie',
-    }}
-    callToAction2={{ text: 'How It Works', href: '#how-it-works-section' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
-  >
-    <Fragment slot="title">
-      <span class="text-white dark:text-white" style="position:relative; left: 6px;"
-        >Protect Your<br />Crypto Against</span
-      >
+  <div class="max-h-[1100px] 2xl:max-h-[960px] overflow-hidden">
+    <Hero
+      callToAction={{
+        text: 'Watch Videos',
+        href: '#videos',
+        icon: 'tabler:movie',
+      }}
+      callToAction2={{ text: 'How It Works', href: '#how-it-works-section' }}
+      image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    >
+      <Fragment slot="title">
+        <span class="text-white dark:text-white" style="position:relative; left: 6px;"
+          >Protect Your<br />Crypto Against</span
+        >
 
-      <section class="animation-container" id="hero-subtitle-1">
-        <span class="animation-headline slide">
-          <span class="animation-words-wrapper text-accent dark:text-[#FF5E0E] text-[#FF5E0E] highlight mt-4">
-            <b class="is-visible text-8xl px-2 tracking-tight text-[#FF5E0E]">FIRE</b>
-            <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">FLOOD</b>
-            <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">THEFT</b>
-            <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">LOSS</b>
-            <b id="fatal-spacewalks" class="taller text-[77px] tracking-tight text-[#FF5E0E]">FATAL SPACEWALKS</b>
+        <section class="animation-container" id="hero-subtitle-1">
+          <span class="animation-headline slide">
+            <span class="animation-words-wrapper text-accent dark:text-[#FF5E0E] text-[#FF5E0E] highlight mt-4">
+              <b class="is-visible text-8xl px-2 tracking-tight text-[#FF5E0E]">FIRE</b>
+              <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">FLOOD</b>
+              <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">THEFT</b>
+              <b class="text-8xl px-2 tracking-tight text-[#FF5E0E]">LOSS</b>
+              <b id="fatal-spacewalks" class="taller text-[77px] tracking-tight text-[#FF5E0E]">FATAL SPACEWALKS</b>
+            </span>
           </span>
-        </span>
-      </section>
+        </section>
 
-      <section class="animation-container" id="hero-subtitle-2">
-        <span class="animation-headline slide">
-          <span class="animation-words-wrapper text-accent dark:text-[#FF5E0E] text-[#FF5E0E] highlight mt-4">
-            <b class="is-visible text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">FIRE</b>
-            <b class="text-6xl mb-2 px-2 tracking-tight text-[#FF5E0E]">FLOOD</b>
-            <b class="text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">THEFT</b>
-            <b class="text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">LOSS</b>
-            <b id="fatal-spacewalks-2" class="shakeit tall text-[37px] px-2 tracking-tight text-[#FF5E0E]"
-              >FATAL<br />SPACEWALKS</b
-            >
+        <section class="animation-container" id="hero-subtitle-2">
+          <span class="animation-headline slide">
+            <span class="animation-words-wrapper text-accent dark:text-[#FF5E0E] text-[#FF5E0E] highlight mt-4">
+              <b class="is-visible text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">FIRE</b>
+              <b class="text-6xl mb-2 px-2 tracking-tight text-[#FF5E0E]">FLOOD</b>
+              <b class="text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">THEFT</b>
+              <b class="text-6xl px-2 mb-2 tracking-tight text-[#FF5E0E]">LOSS</b>
+              <b id="fatal-spacewalks-2" class="shakeit tall text-[37px] px-2 tracking-tight text-[#FF5E0E]"
+                >FATAL<br />SPACEWALKS</b
+              >
+            </span>
           </span>
-        </span>
-      </section>
+        </section>
 
-      <!-- <span
+        <!-- <span
         id="hero-subtitle-2"
         class="text-accent lg:text-5xl md:text-5xl text-4xl dark:text-[#FF5E0E] text-[#FF5E0E] highlight"
         id="thetitle"
       >
         FIRE. FLOOD. THEFT. LOSS.<br />FATAL SPACEWALKS.</span
       > -->
-    </Fragment>
+      </Fragment>
 
-    <Fragment slot="subtitle">
-      <div id="hero-subtitle">
-        <span class="sm:inline text-white/90">
-          <span class="font-bold"></span>Dave went for a spacewalk. His family didn't have his crypto details. No
-          logins, seed phrases or private keys. Luckily, his cryptocurrency was not lost! Dave's <span
-            class="text-[#FF5E0E]">Deadman Switch</span
-          > protected his cryptos when he was alive and passed them on automatically to loved ones after his death. Dave's
-          family are wealthy because he used Keyback.</span
-        >
-      </div>
-    </Fragment>
-  </Hero>
+      <Fragment slot="subtitle">
+        <div id="hero-subtitle">
+          <span class="sm:inline text-white/90">
+            <span class="font-bold"></span>Dave went for a spacewalk. His family didn't have his crypto details. No
+            logins, seed phrases or private keys. Luckily, his cryptocurrency was not lost! Dave's <span
+              class="text-[#FF5E0E]">Deadman Switch</span
+            > protected his cryptos when he was alive and passed them on automatically to loved ones after his death. Dave's
+            family are wealthy because he used Keyback.</span
+          >
+        </div>
+      </Fragment>
+    </Hero>
+  </div>
+  <CantHelpYouDave />
   <Media />
   <!-- <HowItWorks /> -->
   <div class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
