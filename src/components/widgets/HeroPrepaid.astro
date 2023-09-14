@@ -97,7 +97,7 @@ const {
                       ) : (
                         <a
                           id="how-it-works"
-                          style="z-index:900"
+                          style="z-index:900;position:relative;"
                           class="btn btn-primary w-full bg-gray-800/30 text-white dark:hover:text-burntorange dark:hover:bg-white dark:text-white"
                           href={callToAction2?.href}
                         >
@@ -113,6 +113,9 @@ const {
                   )
                 }
               </div>
+              <button id="openModal" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Sign Up for Free
+              </button>
             </div>
             {content && <Fragment set:html={content} />}
           </div>
