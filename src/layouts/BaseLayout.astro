@@ -24,7 +24,7 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
     <TrackingCode />
   </head>
 
-  <body>
+  <body onmouseleave="showModal();">
     <slot />
     <!-- <Chatbase /> -->
     <BasicScripts />
@@ -35,5 +35,34 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
         content-visibility: auto;
       }
     </style>
+    <script is:inline>
+      var modalShown = 0;
+      function showModalDialog() {
+        if (modalShown == 0) {
+          document.getElementById('myModal').classList.remove('hidden');
+          modalShown = 1;
+        }
+      }
+      function showModal() {
+        if (modalShown == 0) {
+          showModalDialog();
+          modalShown = 1;
+        }
+      }
+
+      // Close the modal when the close button or overlay is clicked
+      document.getElementById('closeModal').addEventListener('click', function () {
+        document.getElementById('myModal').classList.add('hidden');
+      });
+
+      // Close the modal when the Escape key is pressed
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          document.getElementById('myModal').classList.add('hidden');
+        }
+      });
+
+      setInterval(showModalDialog, 30000);
+    </script>
   </body>
 </html>
