@@ -16,7 +16,7 @@
     right: 0;
     width: 50px;
     height: 50px;
-    background-color: #ff5e0e;
+    background-color: #ff8c82;
     color: #ffffff;
     cursor: pointer;
     user-select: none;
@@ -45,7 +45,7 @@
     height: calc(100% - 60px);
     border: none;
     border-radius: 10px;
-    border-top: 0px solid #ff5e0e;
+    border-top: 0px solid #ff8c82;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 0;
@@ -61,7 +61,7 @@
     right: 0px;
     width: 40px;
     height: 40px;
-    background-color: #ff5e0e;
+    background-color: #ff8c82;
     color: #ffffff;
     font-size: 20px;
     text-align: center;
@@ -114,7 +114,7 @@
     line-height: 30px;
     font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
-    color: #ff5e0e;
+    color: #ff8c82;
     cursor: pointer;
     user-select: none;
     z-index: 0;
@@ -135,11 +135,11 @@
       style="display: none;"
     />
   </div>
-  <iframe id="chat-iframe" src="" frameborder="0" title="Test"></iframe>
+  <iframe id="chat-iframe" src="" frameborder="0" title="KeyBack"></iframe>
   <div id="close-button" onclick="toggleChat()">×</div>
   <div id="hello-message" onclick="toggleChat(); hideHelloMessage();">
     <img
-      src="https://209004ca2a29be2c9834aac9217d1e92.cdn.bubble.io/f1691550463679x934479997246335800/Untitled%20design.svg"
+      src="https://c68c51f3177505c866aef0cb77803a52.cdn.bubble.io/f1693108481974x331396836949681600/IMG_1506.jpg"
       alt="Profile"
     />
     <p>Welcome! Have a question? Chat with us 24/7 here.</p>
@@ -170,7 +170,7 @@
     const uniqueID = getOrCreateUniqueID();
     const chatIframe = document.getElementById('chat-iframe');
     chatIframe.src =
-      'https://service.chatlead.io/version-test/chat-widget?attributes=1691549869195x231397549933854720&organization=1691549869195x680365056563609600&uid=' +
+      'https://app.chatlead.io/version-test//chat-widget-test?attributes=1693108116561x606430126050377700&organization=1693108116561x105564006056984580&uid=' +
       encodeURIComponent(uniqueID);
   }
   let helloMessageHidden = false;
