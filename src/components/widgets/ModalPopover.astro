@@ -41,22 +41,3 @@
     </div>
   </div>
 </div>
-
-<script is:inline>
-  // Open the modal when the "Sign Up for Free" button is clicked
-  document.getElementById('openModal').addEventListener('click', function () {
-    document.getElementById('myModal').classList.remove('hidden');
-  });
-
-  // Close the modal when the close button or overlay is clicked
-  document.getElementById('closeModal').addEventListener('click', function () {
-    document.getElementById('myModal').classList.add('hidden');
-  });
-
-  // Close the modal when the Escape key is pressed
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') {
-      document.getElementById('myModal').classList.add('hidden');
-    }
-  });
-</script>
